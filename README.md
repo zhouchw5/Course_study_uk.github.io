@@ -8,4 +8,6 @@ In the first two chapter, the most important factor is the primal-duality proble
 
 有很多未竟的逻辑模块，比如strong duality的证明，以及all possible cases的证明；等等。
 
+我能不能把原来infeasible problem的最后一个constraint写成目标函数呢？
+
 
