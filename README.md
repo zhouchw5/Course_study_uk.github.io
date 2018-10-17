@@ -1,4 +1,7 @@
-# The basic value_Note of Fundamentals of Operations Research
+# Basic Curiosity_My Notes and Performance of Fundamentals of Operations Research & Analytics
+
+Two weeks' courses have been storaged in the past. As I used to do in physics, I should be intuitively curious about the most simple fundamental of a new course (connecting to my past) and the most frugal orientation of the story (connecting to my future), like the 
+principle of least action in physics. The elementary fundamental of the course Operations is linear programming. And a frugal curiosity is that when I transfer a primal problem into the standard form, whether I can formula the objective function directly by the linear combination of all the constraints.  
 
 For the beginning of a new course, I used to 思考 the elementary value orientation of it, that's how it develop a story. 
 In the first two chapter, the most important factor is the primal-duality problem. The fundamental is our familiar inear programme.    
