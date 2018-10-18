@@ -2,7 +2,12 @@
 
 In my bachelor career in Sun Yat-Sen University, Probability Theory and Statistics had different representatives of intersaction with my (Advanced) Quantum Mechanics, Complex System and Nonlinear Physics, Thermodynamics and Statistical Physics, Solid State Physics, etc. Quite interesting it is to start our story of Data Analysis and Statistical Methods with our Probability knowledge.
 
-In the two weeks' courses storaged in the past,  
+In the two weeks' courses storaged in the past, still some familiar concepts constructed the fundamentals, like the definition of Independence, the Conditional Probability, Law of Total Probability, Bayes' Formula, etc. And what I would like to mention in detail in this letter is some simple interesting techiques and some microscopic thinking about the Euler's Number.              
+             
+- _**Use the chocolates to generate the Euler's Number**_             
+
+
+
 
 
 
