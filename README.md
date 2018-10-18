@@ -4,7 +4,7 @@ In my bachelor career in Sun Yat-Sen University, Probability Theory and Statisti
 
 
 我们可以通过simulation of random walk，结合泰勒展开，能够得到高斯分布和扩散方程的formula。现在亦然，我们有不同的方法可以定义自然数e，例如生日，例如女儿的fraction.
-              
+                    
               
 
 _Yours,_             
