@@ -21,8 +21,12 @@ Using the inclusive-exclusive principle:
 <a href="https://www.codecogs.com/eqnedit.php?latex=$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}(-1)^{i-1}\cdot&space;C_{n}&space;^{i}&space;\cdot&space;A_{n-i}&space;^&space;{n-i}&space;/&space;A_{n}&space;^{n}&space;$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}(-1)^{i-1}\cdot&space;C_{n}&space;^{i}&space;\cdot&space;A_{n-i}&space;^&space;{n-i}&space;/&space;A_{n}&space;^{n}&space;$" title="$P(\cup A_i) = \sum_{i=1}^{n}(-1)^{i-1}\cdot C_{n} ^{i} \cdot A_{n-i} ^ {n-i} / A_{n} ^{n} $" /></a>            
 <a href="https://www.codecogs.com/eqnedit.php?latex=$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}(-1)^{i-1}&space;/&space;i!&space;$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}(-1)^{i-1}&space;/&space;i!&space;$" title="$P(\cup A_i) = \sum_{i=1}^{n}(-1)^{i-1} / i! $" /></a>          
            
-The Taylor series of
- <a href="https://www.codecogs.com/eqnedit.php?latex=$e^x$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^x$" title="$e^x$" /></a> :          
+Based on the Taylor series of
+ <a href="https://www.codecogs.com/eqnedit.php?latex=$e^x$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^x$" title="$e^x$" /></a> we can know that:              
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\lim_{n&space;\to&space;\infty&space;}&space;P(\bigcup_{i=1}^{n}&space;A_i)&space;=&space;1-e^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\lim_{n&space;\to&space;\infty&space;}&space;P(\bigcup_{i=1}^{n}&space;A_i)&space;=&space;1-e^{-1}$" title="$\lim_{n \to \infty } P(\bigcup_{i=1}^{n} A_i) = 1-e^{-1}$" /></a>               
+p(n-> infinite chocolates all go to the wrong spots) =
+ <a href="https://www.codecogs.com/eqnedit.php?latex=$e^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^{-1}$" title="$e^{-1}$" /></a>             
+ 
  
 
 
