@@ -42,7 +42,9 @@ In a society one couple would stop having more kids until they have daughter (su
 <a href="https://www.codecogs.com/eqnedit.php?latex=$e&space;=&space;2^{1/E(p)}&space;$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e&space;=&space;2^{1/E(p)}&space;$" title="$e = 2^{1/E(p)} $" /></a>                 
                    
                    
-With the help of the cute daughter or the chocolates, we can approximate the value of e by large number simulations. But actually it's not the critical point here how to calculate the value of e, which is an elementary common sense known to all of us.                     
+With the help of the cute daughter or the chocolates, we can approximate the value of e by large number simulations. But actually it's not the critical point here how to calculate the value of e, which is an elementary common sense known to all of us. I just keep my wondering that whether there's an inconspicuous bond connecting the Eular's Number and probability theory. Still in the first chapter, many other interesting points you can see like using the sysmetry and the relation
+ <a href="https://www.codecogs.com/eqnedit.php?latex=$C_{2n}^{n}&space;=&space;\sum_{i=0}^{n}&space;(C_{n}^{i})^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$C_{2n}^{n}&space;=&space;\sum_{i=0}^{n}&space;(C_{n}^{i})^2$" title="$C_{2n}^{n} = \sum_{i=0}^{n} (C_{n}^{i})^2$" /></a>
+ to figure out the winning rate of a competition in random coins tossing, with (n+1) coins for one competitor, and n coins for another. 
 
             
 
