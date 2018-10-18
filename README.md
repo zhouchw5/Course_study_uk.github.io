@@ -44,7 +44,9 @@ In a society one couple would stop having more kids until they have daughter (su
                    
 With the help of the cute daughter or the chocolates, we can approximate the value of e by large number simulations. But actually it's not the critical point here how to calculate the value of e, which is an elementary common sense known to all of us. I just keep my wondering that whether there's an inconspicuous bond connecting the Eular's Number and probability theory. Still in the first chapter, many other interesting points you can see like using the sysmetry and the relation
  <a href="https://www.codecogs.com/eqnedit.php?latex=$C_{2n}^{n}&space;=&space;\sum_{i=0}^{n}&space;(C_{n}^{i})^2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$C_{2n}^{n}&space;=&space;\sum_{i=0}^{n}&space;(C_{n}^{i})^2$" title="$C_{2n}^{n} = \sum_{i=0}^{n} (C_{n}^{i})^2$" /></a>
- to figure out the winning rate of a competition in random coins tossing, with (n+1) coins for one competitor, and n coins for another. 
+ to figure out the winning rate of a competition in random coins tossing, with (n+1) coins for one competitor, and n coins for another.           
+               
+Every page of days dances with London. Just keep wondering why time flies and focus on the real things, f$$king the rest. I wish my time could allow me to keep on my notes. But the next thursday I would attend a competition of Big Data and Advanced Analytics in Strategy Consulting with a former staff in Goldman Sachs. So I should start to make some research and strategizing on it. If some interesting reminders of this course come out from my mind, I would share them in subsequent notes.                                
 
             
 
