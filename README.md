@@ -29,8 +29,11 @@ p(n-> infinite chocolates all go to the wrong spots) =
            
 Thus we can see that when n -> infinite in this case, the probability of all chocolate returning to the right spots can generate the reciprocal of the Eular's Number. I think this's also another way to define the value of the Euler's Numer. It is enlightening that we can obtain/find some macroscopic formulas/principles/theorems by integrating a great deal of microscopic processes based on rules of inconspicuous certainty, like what we did in Complex Systems and Nonlinear Physics, generating the formulas of Gaussian Distribution and diffusion equation by random walk simulation.                    
            
-               
-- _**Daughter helps you generate the Eular's Number**_                      
+                      
+                       
+                       
+- _**Daughter helps you generate the Eular's Number**_
+
 In a society one couple would stop having more kids until they have daughter (supposing that each child have a probability 1/2 to be a girl), what will happen eventually to the fraction of girls in this society? Initially I calculated the expectation of fraction directly.                           
 <a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" title="$E(p) = 1\cdot(1/2)+(1/2)\cdot (1/2)^2 + (1/3)\cdot (1/2)^3+...$" /></a>                 
 
