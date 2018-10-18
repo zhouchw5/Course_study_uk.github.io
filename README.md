@@ -40,7 +40,9 @@ In a society one couple would stop having more kids until they have daughter (su
 <a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;\sum_{i=1}^{\infty}&space;\int_{0}^{1/2}x^{i-1}dx$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;\sum_{i=1}^{\infty}&space;\int_{0}^{1/2}x^{i-1}dx$" title="$E(p) = \sum_{i=1}^{\infty} \int_{0}^{1/2}x^{i-1}dx$" /></a>                           
 <a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;\int_{0}^{1/2}[&space;\sum_{i=1}^{\infty}x^{i-1}&space;]dx&space;=&space;\int_{0}^{1/2}[&space;1/(1-x)&space;]dx&space;=&space;[-ln(1-x)]|_{0}^{1/2}&space;=&space;ln2$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;\int_{0}^{1/2}[&space;\sum_{i=1}^{\infty}x^{i-1}&space;]dx&space;=&space;\int_{0}^{1/2}[&space;1/(1-x)&space;]dx&space;=&space;[-ln(1-x)]|_{0}^{1/2}&space;=&space;ln2$" title="$E(p) = \int_{0}^{1/2}[ \sum_{i=1}^{\infty}x^{i-1} ]dx = \int_{0}^{1/2}[ 1/(1-x) ]dx = [-ln(1-x)]|_{0}^{1/2} = ln2$" /></a>        
 <a href="https://www.codecogs.com/eqnedit.php?latex=$e&space;=&space;2^{1/E(p)}&space;$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e&space;=&space;2^{1/E(p)}&space;$" title="$e = 2^{1/E(p)} $" /></a>                 
-
+                   
+                   
+With the help of the cute daughter or the chocolates, we can approximate the value of e by large number simulations. But actually it's not the critical point here how to calculate the value of e, which is an elementary common sense known to all of us.                     
 
             
 
@@ -59,7 +61,6 @@ In a society one couple would stop having more kids until they have daughter (su
 
 
 
-我们可以通过simulation of random walk，结合泰勒展开，能够得到高斯分布和扩散方程的formula。现在亦然，我们有不同的方法可以定义自然数e，例如生日，例如女儿的fraction. 女儿的算法有两种；一种是fraction的数学期望值，另一种是先算各自的期望值，再求fraction；
                     
               
 
