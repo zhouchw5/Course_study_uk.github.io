@@ -1,4 +1,12 @@
-# Probability_My Notes and Performance in Data Analysis and Statistical Methods
+# Probability_My Notes and Performance in 
+
+昨天的课第一次被lse的老师说你是班里唯一用这种方法的同学；
+
+今天的课第一次和老师提出新的解法；
+
+就是利用夹逼定理、洛必达法则证明极限；
+
+
 
 In my bachelor career in Sun Yat-Sen University, Probability Theory and Statistics had different typpes of intersaction with (Advanced) Quantum Mechanics, Complex System and Nonlinear Physics, Thermodynamics and Statistical Physics, Solid State Physics.           
 
