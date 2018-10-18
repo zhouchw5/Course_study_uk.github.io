@@ -10,8 +10,7 @@ Considering a box of **n chocolates** with all of different shapes, your daughte
 <a href="https://www.codecogs.com/eqnedit.php?latex=$n&space;\to&space;\infty$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$n&space;\to&space;\infty$" title="$n \to \infty$" /></a>
 , we can obtain that the probability goes to **1/e**.             
              
-<a href="https://www.codecogs.com/eqnedit.php?latex=$A_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$A_i$" title="$A_i$" /></a>:  
-denotes the event that the i-th chocolate is put in the right spot.         
+<a href="https://www.codecogs.com/eqnedit.php?latex=$A_i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$A_i$" title="$A_i$" /></a>: denotes the event that the i-th chocolate is put in the right spot.         
           
           
 <a href="https://www.codecogs.com/eqnedit.php?latex=$1-P(\cup&space;A_i)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$1-P(\cup&space;A_i)$" title="$1-P(\cup A_i)$" /></a>
