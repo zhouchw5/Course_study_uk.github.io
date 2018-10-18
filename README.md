@@ -15,6 +15,10 @@ Considering a box of **n chocolates** with all of different shapes, your daughte
           
 <a href="https://www.codecogs.com/eqnedit.php?latex=$1-P(\cup&space;A_i)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$1-P(\cup&space;A_i)$" title="$1-P(\cup A_i)$" /></a>
 : The probability that every chocolate goes back to the wrong spot;          
+           
+Using the inclusive-exclusive principle:           
+<a href="https://www.codecogs.com/eqnedit.php?latex=$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}P(A_i)&space;-&space;\sum_{1\leq&space;i<&space;j\leq&space;n}&space;P(A_{i}A_{j})&space;&plus;&space;...&plus;(-1)^{n-1}P(A_{1}...A_{n})$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$P(\cup&space;A_i)&space;=&space;\sum_{i=1}^{n}P(A_i)&space;-&space;\sum_{1\leq&space;i<&space;j\leq&space;n}&space;P(A_{i}A_{j})&space;&plus;&space;...&plus;(-1)^{n-1}P(A_{1}...A_{n})$" title="$P(\cup A_i) = \sum_{i=1}^{n}P(A_i) - \sum_{1\leq i< j\leq n} P(A_{i}A_{j}) + ...+(-1)^{n-1}P(A_{1}...A_{n})$" /></a>                  
+
 
 
 
