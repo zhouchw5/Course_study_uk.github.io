@@ -35,7 +35,9 @@ Thus we can see that when n -> infinite in this case, the probability of all cho
 - _**Daughter helps you generate the Eular's Number**_
 
 In a society one couple would stop having more kids until they have daughter (supposing that each child have a probability 1/2 to be a girl), what will happen eventually to the fraction of girls in this society? Initially I calculated the expectation of fraction directly.                           
-<a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" title="$E(p) = 1\cdot(1/2)+(1/2)\cdot (1/2)^2 + (1/3)\cdot (1/2)^3+...$" /></a>                 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;1\cdot(1/2)&plus;(1/2)\cdot&space;(1/2)^2&space;&plus;&space;(1/3)\cdot&space;(1/2)^3&plus;...$" title="$E(p) = 1\cdot(1/2)+(1/2)\cdot (1/2)^2 + (1/3)\cdot (1/2)^3+...$" /></a>             
+<a href="https://www.codecogs.com/eqnedit.php?latex=$E(p)&space;=&space;\sum_{i=1}^{\infty}&space;(1/i)&space;\cdot&space;(1/2)^i$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E(p)&space;=&space;\sum_{i=1}^{\infty}&space;(1/i)&space;\cdot&space;(1/2)^i$" title="$E(p) = \sum_{i=1}^{\infty} (1/i) \cdot (1/2)^i$" /></a>                        
+
 
 
  
