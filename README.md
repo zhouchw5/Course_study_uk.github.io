@@ -28,6 +28,10 @@ p(n-> infinite chocolates all go to the wrong spots) =
  <a href="https://www.codecogs.com/eqnedit.php?latex=$e^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$e^{-1}$" title="$e^{-1}$" /></a>             
            
 Thus we can see that when n -> infinite in this case, the probability of all chocolate returning to the right spots can generate the reciprocal of the Eular's Number. I think this's also another way to define the value of the Euler's Numer. It is enlightening that we can obtain/find some macroscopic formulas/principles/theorems by integrating a great deal of microscopic processes based on rules of inconspicuous certainty, like what we did in Complex Systems and Nonlinear Physics, generating the formulas of Gaussian Distribution and diffusion equation by random walk simulation.                    
+           
+               
+- _**Daughter helps your generate the Eular's Number**_                      
+
  
 
 
