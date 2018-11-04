@@ -36,6 +36,7 @@ show(x_y)
 ![white](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/white.png)             
 ![n1000](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/n1000.png)                       
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n=1000, with red dots representing factorials, blue line representing the exponential of 2              
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **It means that for a large n, the event count of the permutation and combination would far more than that of filling n digits with binary numbers 0 or 1.**                
  
 
 
