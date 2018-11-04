@@ -38,8 +38,24 @@ show(x_y)
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n=1000, with red dots representing factorials, blue line representing the exponential of 2              
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **It means that for a large n, the event count of the permutation and combination would far more than that**               
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **of filling n digits with binary numbers 0 or 1.**                
- 
-
+                    
+                    
+![white](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/white.png)              
+- **Tossing Game with R**                
+```R
+x <- c(sample(1:6, 100000, replace = T))
+y <- as.data.frame(table(x))
+names(y) <- c("Toss", "Frequency")
+y.probability <- data.frame(Probability = y$Frequency/100000, y[,])
+attach(y.probability)
+plot(Toss, Probability)
+A = (y.probability$Toss == 1)                
+           
+A = subset(y.probability, Toss == 2, select = Probability)+ subset(y.probability, Toss == 4, select = Probability)+ subset(y.probability, Toss == 6, select = Probability)
+B = subset(y.probability, Toss == 1, select = Probability)+ subset(y.probability, Toss == 2, select = Probability)+ subset(y.probability, Toss == 3, select = Probability) + subset(y.probability, Toss == 4, select = Probability)
+C = subset(y.probability, Toss == 2, select = Probability)+ subset(y.probability, Toss == 4, select = Probability)           
+```
+                    
 
 
 
