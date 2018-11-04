@@ -14,13 +14,19 @@ which we firstly formulate.
 <a href="https://www.codecogs.com/eqnedit.php?latex=$&space;\lim_{n&space;\to&space;\infty&space;}(2^{n}/n!)&space;\rightarrow&space;0&space;$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$&space;\lim_{n&space;\to&space;\infty&space;}(2^{n}/n!)&space;\rightarrow&space;0&space;$" title="$ \lim_{n \to \infty }(2^{n}/n!) \rightarrow 0 $" /></a>                
 **Simulation in Python**      
 
-------- python
-x = np.array(np.arange(8))
-y1 = [0 for i in range(8)]
-for i in range(8):    
+``` python
+x = np.array(np.arange(1000))
+y1 = [0 for i in range(1000)]
+for i in range(1000):    
     y1[i] = np.math.factorial(x[i])
+y2 = 2**x
+x_y = figure()
+x_y.line(x, y2, line_width = 2)
+x_y.circle(x, y1, fill_color = 'red', size = 8)
+output_file('x_t.html')
+show(x_y)
+```                    
 
--------
 
 
 
