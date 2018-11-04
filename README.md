@@ -34,7 +34,9 @@ show(x_y)
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n=10, with red dots representing factorials, blue line representing the exponential of 2                      
              
 ![white](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/white.png)             
-
+![n1000](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/n1000.png)                       
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n=1000, with red dots representing factorials, blue line representing the exponential of 2              
+ 
 
 
 
