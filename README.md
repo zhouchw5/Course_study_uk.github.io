@@ -27,7 +27,7 @@ output_file('x_t.html')
 show(x_y)
 ```                 
 ![n5](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/n5.png)
-
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n=5, with red dots representing factorials, blue line representing the exponential of 2  
 
 
 
