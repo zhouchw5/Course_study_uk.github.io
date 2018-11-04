@@ -1,4 +1,4 @@
-# Fundamental Performances of Statistics Methods via R/Python
+# Fundamental Performances of Statistical Methods via R/Python
 
 - **Asymptotic Notation**                    
 <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n&space;=&space;o(n!)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n&space;=&space;o(n!)$" title="$2^n = o(n!)$" /></a>                    
@@ -25,7 +25,8 @@ x_y.line(x, y2, line_width = 2)
 x_y.circle(x, y1, fill_color = 'red', size = 8)
 output_file('x_t.html')
 show(x_y)
-```                    
+```                 
+![n5](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Data-Analysis_R_review_20181104/n5.png)
 
 
 
