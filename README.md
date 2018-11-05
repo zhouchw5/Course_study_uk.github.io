@@ -1,4 +1,4 @@
-# Fundamental Performances of Statistical Methods via R/Python
+# Fundamentals of Operations Research & Analytics_20181105
 
 - **Any two states in the same class of a Markov chain have the same period**
 
