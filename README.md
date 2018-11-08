@@ -101,7 +101,7 @@ class Solution {
                 }  
             }
             lengthSub[i] = end - i + 1;
-		}
+	}
         int maxlength = lengthSub[0];
         int maxIndex = 0;
         for (int i=0; i < s.length(); i++) {
