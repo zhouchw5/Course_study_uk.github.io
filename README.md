@@ -56,7 +56,9 @@ public class nonrepeatedString {
 		System.out.print("', with the length of " + maxlength + ".");
 	}
 }
-```
+```             
+In my leetCode submission, limited to the given format, I give up the method 'repeatedIndex' outside the main method and integrate all the coding process into one method that would return an integer variable, shown as below, from which we could see that defining methods in advanced and assigning them in the main method would make our coding more structured and readable.             
+
 
 ```java
 class Solution {
