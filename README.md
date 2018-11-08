@@ -58,4 +58,60 @@ public class nonrepeatedString {
 }
 ```
 
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int[] lengthSub = new int[s.length()];
+        int end = s.length()-1;
+        for(int i = 0; i < s.length(); i++) {
+            for (int j = i+1; j<=end; j++) {
+                if (s.charAt(j) == s.charAt(i)) {
+                    end = j;
+                    break;
+                }
+            }
+            if ((end == s.length()-1)&&(s.charAt(end) !=s.charAt(i))) {
+                for (int k=i+1; k<end; k++) {
+                    int end_T = end;
+                    for (int h=k+1; h<=end; h++) {
+                        if (s.charAt(h) == s.charAt(k)) {
+                            end_T = h;
+                        }
+                    }
+                    if ((end_T== end)&&(s.charAt(end_T)!=s.charAt(k))){
+                        end = end_T;
+                    }else {
+                        end = end_T-1;
+                    }
+                }    
+            }else {
+                end = end-1;
+                for (int k=i+1; k<end; k++) {
+                    int end_T = end;
+                    for (int h=k+1; h<=end; h++) {
+                        if (s.charAt(h) == s.charAt(k)) {
+                            end_T = h;
+                        }
+                    }
+                    if ((end_T== end)&&(s.charAt(end_T)!=s.charAt(k))){
+                        end = end_T;
+                    }else {
+                        end = end_T-1;
+                    }
+                }  
+            }
+            lengthSub[i] = end - i + 1;
+		}
+        int maxlength = lengthSub[0];
+        int maxIndex = 0;
+        for (int i=0; i < s.length(); i++) {
+            if (lengthSub[i] > maxlength) {
+                maxlength = lengthSub[i];
+                maxIndex = i;
+            }
+        }
+        return maxlength;
+	}
+}
+```
 
