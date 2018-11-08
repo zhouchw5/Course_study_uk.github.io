@@ -75,7 +75,7 @@ class Solution {
             if ((end == s.length()-1)&&(s.charAt(end) !=s.charAt(i))) {
                 for (int k=i+1; k<end; k++) {
                     int end_T = end;
-                    for (int h=k+1; h<=end; h++) {
+                    for (int h=k+1; h<=end_T; h++) {
                         if (s.charAt(h) == s.charAt(k)) {
                             end_T = h;
                         }
@@ -90,7 +90,7 @@ class Solution {
                 end = end-1;
                 for (int k=i+1; k<end; k++) {
                     int end_T = end;
-                    for (int h=k+1; h<=end; h++) {
+                    for (int h=k+1; h<=end_T; h++) {
                         if (s.charAt(h) == s.charAt(k)) {
                             end_T = h;
                         }
