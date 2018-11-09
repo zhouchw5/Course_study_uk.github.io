@@ -4,11 +4,18 @@
 
 Binomial Distribution: X->Bin(n, p), including the Bernouli distribution X->Bin(1, p);                
 ``` r
-x <- rbinom(10, 100, 0.1)
+x <- rbinom(10000, 100, 0.1)
 mean(x)
 length(x)
 table(x)
 
+t <- c(1:1000)
+#CDF:
+pbinom(t, 100, 0.1)
+#PDF:
+pbinom(t, 100, 0.1)
+#quantile:
+qbimou(t, 100, 0.1)
 ```
 
 
