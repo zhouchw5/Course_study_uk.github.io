@@ -2,7 +2,7 @@
 
 - **Distribution Sampling**
 
-Binomial Distribution: X~Bin(n, p), including the Bernouli distribution X~Bin(1, p);                
+Binomial Distribution: X->Bin(n, p), including the Bernouli distribution X->Bin(1, p);                
 ``` r
 x <- rbinom(10, 100, 0.1)
 mean(x)
