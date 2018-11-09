@@ -1,5 +1,17 @@
 # Fundamental Performances of Statistical Methods via R/Python
 
+- **Distribution Sampling**
+
+Binomial Distribution: X~Bin(n, p), including the Bernouli distribution X~Bin(1, p);                
+``` r
+x <- rbinom(10, 100, 0.1)
+mean(x)
+length(x)
+table(x)
+
+```
+
+
 - **Asymptotic Notation**                    
 <a href="https://www.codecogs.com/eqnedit.php?latex=$2^n&space;=&space;o(n!)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$2^n&space;=&space;o(n!)$" title="$2^n = o(n!)$" /></a>                    
 If one pen and a sheet of A4 paper are given, it can be written as:                
