@@ -15,7 +15,7 @@ pbinom(t, 100, 0.1)
 #PDF:
 pbinom(t, 100, 0.1)
 #quantile:
-qbimou(t, 100, 0.1)
+qbinom(t, 100, 0.1)
 ```
 
 
