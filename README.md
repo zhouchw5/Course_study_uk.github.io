@@ -14,7 +14,12 @@ class Classname {
 	// From string to integer:
 	a = Integer.parseInt(args[0]);
  	
+	// From string to double:
+	a = Double.parseDouble(args[0]);
 	
+	// From int/dooube to string:
+	args[0] = String.valueOf(a);
+	args[1] = Integer.toString(b);
 	}
 }
 ```
