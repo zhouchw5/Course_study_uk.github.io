@@ -23,6 +23,7 @@ class Classname {
 	}
 }
 ```
+where the static method parseInt of the class Integer has been called by stating **a = Integer.parseInt(args[0]);**.              
 
 
           
