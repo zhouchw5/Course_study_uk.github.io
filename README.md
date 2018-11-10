@@ -23,7 +23,11 @@ class Classname {
 	}
 }
 ```
-where the static method parseInt of the class Integer has been called by stating **a = Integer.parseInt(args[0]);**.              
+where the static method parseInt of the class Integer has been called by stating **a = Integer.parseInt(args[0]);**.                  
+
+                 
+We can also refer to the Objected Oriented Programming in Python:                      
+
 
 
           
