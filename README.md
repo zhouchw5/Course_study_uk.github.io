@@ -26,8 +26,23 @@ class Classname {
 where the static method parseInt of the class Integer has been called by stating **a = Integer.parseInt(args[0]);**.                  
 
                  
-We can also refer to the Objected Oriented Programming in Python:                      
-
+We can also refer to the Objected Oriented Programming in Python:             
+```python
+class Foo:
+    
+    def Bar(self):
+        print("Bar") 
+        
+    def Hello(self, name):
+        print("i am %s" % (name))
+    
+obj = Foo()
+obj.Bar()
+obj.Hello('zhouchuwei') 
+```
+where we call the method in the class by object itself directly.              
+                     
+		     
 
 
           
