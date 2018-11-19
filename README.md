@@ -1,4 +1,4 @@
-#The balance equations should have another more mathematically convincing proof
+# The balance equations should have another more mathematically convincing proof
 
 
                     
