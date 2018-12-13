@@ -19,6 +19,15 @@ To concatenate vectors:
 x <- c(small, large, small)
 # x = (1 2 0 0 0 0 0 0 1 2)
 ```
+Some useful operators with respect to the elements:             
+```r
+total <- sum(weight)
+#        where weight is a vector
+numobs <- length(weight)
+meanweight <- total/numobs
+x <- mean(weight)
+#    where x=meanweight   
+```
 To remove all the objects:            
 ```r
 rm(list=objects())
