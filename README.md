@@ -15,6 +15,17 @@ y <- small + large
 # y = (1,2,1,2,1,2)
 ```
 To concatenate vectors:
+```r
+x <- c(small, large, small)
+# x = (1 2 0 0 0 0 0 0 1 2)
+```
+To remove all the objects:            
+```r
+rm(list=objects())
+```
+
+
+
 
 
 _Yours,_             
