@@ -1,6 +1,5 @@
 # Some Convenient Notes on R Sessions            
-## Vector
-### Vector_basic computing
+## Vector         
 The product of two vectors with the same length: just the vector containing the elements equal to the products of the corresponding two elements with the same index;         
 ```r
 x <- c(1, 2, 3)
@@ -32,7 +31,17 @@ To remove all the objects:
 ```r
 rm(list=objects())
 ```
-
+               
+## Data Frame        
+To construct the data frame, combine the different variables (each variable is a vector, because in the data frame you have observations, the number of observations is the length of a vector.)           
+```r
+weight <- c(135, 165.6, 123, 122, 189)
+height <- c(86.5, 71.8, 77.2, 84.9, 75.4)
+combining <-  data.frame(weight, height)
+sheep <- data.frame(weight, height)
+# calculate the mean of the column 'height':
+mean(sheep$height)
+```
 
 
 
