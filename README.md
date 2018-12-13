@@ -26,7 +26,7 @@ total <- sum(weight)
 numobs <- length(weight)
 meanweight <- total/numobs
 x <- mean(weight)
-#    where x=meanweight   
+#        where x=meanweight   
 ```
 To remove all the objects:            
 ```r
