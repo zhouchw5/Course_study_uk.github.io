@@ -55,6 +55,9 @@ IQR(sheep$height)  #interquartile range
 sd(sheep$backlength)  
 ```
 
+#Two way for system help: ?+object   or   help.start()
+
+
 _Yours,_             
 _Chuwei Zhou_             
 _2018.12.13_
