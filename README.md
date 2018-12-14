@@ -1,4 +1,4 @@
-# Some Convenient Notes on R Sessions            
+# Some Convenient Notes on R Sessions_Vector, Data Frame            
 ## Vector         
 The product of two vectors with the same length: just the vector containing the elements equal to the products of the corresponding two elements with the same index;         
 ```r
@@ -55,7 +55,15 @@ IQR(sheep$height)  #interquartile range
 sd(sheep$backlength)  
 ```
 
-#Two way for system help: ?+object   or   help.start()
+#Two way for system help: ?+object   or   help.start()                  
+
+## Session Management and visibility               
+we can execute the statement objects() to to visualize all the variables we have initialized. But generally some variables have been encapsulated in a data frame. So we can tide up our workspace by removing some variables, and we can still get access to them via the data frame.                
+```r
+rm(height, weight)
+sheep$weight
+```
+Thanks for Dr.Chen from Cambridge University leading us in data analysis and statistical methods.             
 
 
 _Yours,_             
