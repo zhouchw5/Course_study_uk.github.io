@@ -42,7 +42,10 @@ sheep <- data.frame(weight, height)
 # calculate the mean of the column 'height':
 mean(sheep$height)
 ```
-
+To add another column with the variable named backlength:             
+```r
+sheep$backlength <- c(130.4, 100.2, 109.4, 140.6, 101.4)
+```
 
 
 
