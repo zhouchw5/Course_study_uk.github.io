@@ -1,4 +1,4 @@
-# Some Convenient Notes on R Sessions_Vector, Data Frame, Session Management, Importing Data                       
+# Some Convenient Notes on R Sessions_Vector, Data Frame, Session Management, Importing/Editing Data                       
 ## Vector         
 The product of two vectors with the same length: just the vector containing the elements equal to the products of the corresponding two elements with the same index;         
 ```r
@@ -75,11 +75,14 @@ When you usng the Rstudio, you can either try the following steps:
 Reuse the original directory:            
 ![repeat](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-session/repeat%20the%20original%20directory.png)            
 **or using the statement:  setwd("D:/the name of your folder")**                     
-To bring back the the saved objects:          
+You can directly save the current workspace by Rstudio or execute the statement:            
+```r
+save.image("intro1.Rdata")       
+```
+To bring back the the saved objects after restarting the R:          
 ```r
 load("name.Rdata")
 ```
-You can directly save the current workspace by Rstudio or execute the statement: save.image("intro1.Rdata")               
 And to list file in current working directory you just use:           
 ```r
 dir()
