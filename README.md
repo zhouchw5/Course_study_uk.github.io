@@ -1,4 +1,4 @@
-# Some Convenient Notes on R Sessions_Vector, Data Frame            
+# Some Convenient Notes on R Sessions_Vector, Data Frame, Session Management            
 ## Vector         
 The product of two vectors with the same length: just the vector containing the elements equal to the products of the corresponding two elements with the same index;         
 ```r
@@ -69,6 +69,11 @@ attach(sheep)
 weight
 detach()
 ```
+**To set working directory and save the current workspace:**            
+When you usng the Rstudio, you can either try the following steps:               
+![working directory](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-session/working%20directory.png)           
+Reuse the original directory:            
+![repeat](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-session/repeat%20the%20original%20directory.png)            
 
 
 
