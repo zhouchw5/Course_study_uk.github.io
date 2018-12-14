@@ -62,7 +62,16 @@ we can execute the statement objects() to to visualize all the variables we have
 ```r
 rm(height, weight)
 sheep$weight
+```           
+The encapsulation has many advantages in eliminating ambiguity especially in the case where different data frames have some same variables. Besides the statement 'sheep$weight' shown as above, we can also use:                  
+```r
+attach(sheep)
+weight
+detach()
 ```
+
+
+
 Thanks for Dr.Chen from Cambridge University leading us in data analysis and statistical methods.             
 
 
