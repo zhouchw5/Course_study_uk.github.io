@@ -74,13 +74,26 @@ When you usng the Rstudio, you can either try the following steps:
 ![working directory](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-session/working%20directory.png)           
 Reuse the original directory:            
 ![repeat](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-session/repeat%20the%20original%20directory.png)            
-**or using the statement:  setwd("D:/the name of your folder")**              
+**or using the statement:  setwd("D:/the name of your folder")**                     
+To bring back the the saved objects:          
+```r
+load("name.Rdata")
+```
 You can directly save the current workspace by Rstudio or execute the statement: save.image("intro1.Rdata")               
 And to list file in current working directory you just use:           
 ```r
 dir()
 ```
-It is important to be clear about the distinction between the objects listed and the workspace listed.             
+It is important to be clear about the distinction between the objects listed and the workspace listed.               
+## Importing Data          
+After saving the data set in your own directory, to read the data set:             
+```r
+sheep1 <- read.table("sheep.txt", header=TRUE)
+dim(sheep1)
+plot(sheep1$weight, sheep1$height)
+plot(sheep1[,1],sheep1[,2])
+pairs(sheep1)
+```
 
 
 
