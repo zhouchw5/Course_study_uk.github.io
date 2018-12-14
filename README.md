@@ -1,4 +1,4 @@
-# Some Convenient Notes on R Sessions_Vector, Data Frame, Session Management, Importing/Editing Data                       
+# Some Convenient Notes on R Session1_Vector, Data Frame, Session Management, Importing/Editing Data                       
 ## Vector         
 The product of two vectors with the same length: just the vector containing the elements equal to the products of the corresponding two elements with the same index;         
 ```r
@@ -97,7 +97,17 @@ plot(sheep1$weight, sheep1$height)
 plot(sheep1[,1],sheep1[,2])
 pairs(sheep1)
 ```
-
+## Some complementaries for the session1             
+simple statistical functions: 
+```r
+median(); range(); sd(); mad(); #mean absolute deviation
+IQR() #inter-quartile range; min(); max();
+```
+Editing data:          
+```r
+fix(sheep)
+data.entry(sheep)
+```
 
 
 Thanks for Dr.Chen from Cambridge University leading us in data analysis and statistical methods.             
