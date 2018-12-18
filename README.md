@@ -3,7 +3,9 @@ Logic, Logic operators, Logic vectors:
 Add names for the variables:              
 use the function "seq" to create the regular sequences;         
 elements selection by using the logic vectors or the index vector;              
-character sequence;           
+character sequence;              
+how to fix the error in a non-numeric argument to binary operator;           
+
 ## Basic R Graphics          
 histogram:               
 >hist(...)               
