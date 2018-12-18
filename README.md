@@ -1,5 +1,8 @@
 # Some Convenient Notes on R Session2_
-Logic and Logic operators:          
+Logic, Logic operators, Logic vectors:              
+Add names for the variables:              
+use the function "seq" to create the regular sequences;               
+
 
 
                     
