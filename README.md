@@ -1,4 +1,5 @@
-# The balance equations should have another more mathematically convincing proof
+# Some Convenient Notes on R Session2_
+Logic and Logic operators:          
 
 
                     
