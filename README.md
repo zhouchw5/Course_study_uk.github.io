@@ -1,7 +1,16 @@
 # Some Convenient Notes on R Session2_
 Logic, Logic operators, Logic vectors:              
 Add names for the variables:              
-use the function "seq" to create the regular sequences;               
+use the function "seq" to create the regular sequences;         
+elements selection by using the logic vectors or the index vector;              
+character sequence;           
+## Basic R Graphics          
+histogram:               
+>hist(...)               
+To compare a data set to the normal distribution,          
+>qqnorm(...)       
+>qqline(...)             
+
 
 
 
