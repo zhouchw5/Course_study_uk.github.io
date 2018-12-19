@@ -22,3 +22,4 @@ To compare a data set to the normal distribution,
 **_2018.11.19_**                     
  
 
+       
