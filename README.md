@@ -1,4 +1,5 @@
-# Some Convenient Notes on R Session2_
+# Some Convenient Notes on R Session5_Linear Regression              
+
 Logic, Logic operators, Logic vectors:              
 Add names for the variables:              
 use the function "seq" to create the regular sequences;         
