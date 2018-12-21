@@ -39,7 +39,10 @@ Residual standard error: 21.21 on 36 degrees of freedom
 Multiple R-squared:  0.1427,	Adjusted R-squared:  0.1189 
 F-statistic: 5.993 on 1 and 36 DF,  p-value: 0.01937
 ```
-We know that the estimate for the intercept is 
+From the summary above, we know that in the linear regression model 
+<a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\beta&space;_{0}&plus;\beta&space;_{1}x&space;&plus;&space;\varepsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\beta&space;_{0}&plus;\beta&space;_{1}x&space;&plus;&space;\varepsilon" title="y = \beta _{0}+\beta _{1}x + \varepsilon" /></a>, 
+the estimate for the intercept is 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\beta&space;_{0}&space;=&space;4.660" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta&space;_{0}&space;=&space;4.660" title="\beta _{0} = 4.660" /></a>, 
 
 
 
