@@ -18,7 +18,27 @@ Basically, we just utilize the linear regression model considering the dependent
 attach(BrainSize)
 BrainSizeLM1 <- lm(PIQ ~ MRI_Count)
 ```
-       
+When assigning the summary function, we can witness the output of the linear regression model in this data set shown as below:         
+```r
+summary(BrainSizeLM1)
+Call:
+lm(formula = PIQ ~ MRI_Count)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-40.079 -17.508  -2.096  17.100  41.574 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 4.660e+00  4.371e+01   0.107   0.9157  
+MRI_Count   1.176e-04  4.806e-05   2.448   0.0194 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21.21 on 36 degrees of freedom
+Multiple R-squared:  0.1427,	Adjusted R-squared:  0.1189 
+F-statistic: 5.993 on 1 and 36 DF,  p-value: 0.01937
+```
 
 
 
