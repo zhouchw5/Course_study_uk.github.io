@@ -43,6 +43,11 @@ From the summary above, we know that in the linear regression model
 <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\beta&space;_{0}&plus;\beta&space;_{1}x&space;&plus;&space;\varepsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\beta&space;_{0}&plus;\beta&space;_{1}x&space;&plus;&space;\varepsilon" title="y = \beta _{0}+\beta _{1}x + \varepsilon" /></a>, 
 the estimate for the intercept is 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\beta&space;_{0}&space;=&space;4.660" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta&space;_{0}&space;=&space;4.660" title="\beta _{0} = 4.660" /></a>, 
+the estimate for 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{1}$" title="$\beta _{1}$" /></a> 
+is 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" title="$\beta _{1} = 1.17\times 10^{-4}$" /></a>                    
+
 
 
 
