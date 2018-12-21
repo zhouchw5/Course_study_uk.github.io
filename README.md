@@ -39,7 +39,7 @@ Residual standard error: 21.21 on 36 degrees of freedom
 Multiple R-squared:  0.1427,	Adjusted R-squared:  0.1189 
 F-statistic: 5.993 on 1 and 36 DF,  p-value: 0.01937
 ```
-We know that the estimate for the Intercept is 
+We know that the estimate for the intercept is 
 
 
 
