@@ -4,7 +4,6 @@ This letter is mainly to simulate some simple examples in Linear Regression, and
 To read the dataframe and visualize part of it for sampling:           
 ```r
 BrainSize <- read.csv("BrainSize.csv")
-#
 > BrainSize[1:5,]
   Gender FSIQ VIQ PIQ Weight Height MRI_Count
 1 Female  133 132 124    118   64.5    816932
@@ -12,8 +11,13 @@ BrainSize <- read.csv("BrainSize.csv")
 3   Male  133 129 128    172   68.8    965353
 4 Female  137 132 134    147   65.0    951545
 5 Female   99  90 110    146   69.0    928799
+# where we have visualized the first five rows of the data frame in Console.
 ```
-Basically, we just utilize the linear regression model considering the dependent variable                   
+Basically, we just utilize the linear regression model considering the dependent variable PIQ related one type of regressor, MRI_Count.       
+```r
+attach(BrainSize)
+BrainSizeLM1 <- lm(PIQ ~ MRI_Count)
+```
        
 
 
