@@ -46,7 +46,10 @@ the estimate for the intercept is
 the estimate for 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{1}$" title="$\beta _{1}$" /></a> 
 is 
-<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" title="$\beta _{1} = 1.17\times 10^{-4}$" /></a>                    
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{1}&space;=&space;1.17\times&space;10^{-4}$" title="$\beta _{1} = 1.17\times 10^{-4}$" /></a>.             
+Then we move to the standard deviation of the estimated 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{i}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{i}$" title="$\beta _{i}$" /></a>, 
+
 
 
 
