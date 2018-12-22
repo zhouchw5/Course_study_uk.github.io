@@ -91,6 +91,8 @@ We can find that std_beta0 = 43.7129977495838, which is consistent with the corr
 # the result is 4.805862e-05, which is also consistent with the std.error of the coefficient for the variable 'MRI_Count' shown in the summary above. 
 ```
 
+Next, based on the estimators and the standard deviations, we can proceed the hypothesis testing.       
+
 
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
 **_Yours,_**                         
