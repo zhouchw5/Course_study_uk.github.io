@@ -61,8 +61,16 @@ x_1 <- c(BrainSize$MRI_Count)
 x_0 <- x1 <- c(rep(1, times = 38))
 matrix_x <- cbind(x1, test)
 ```
-- **Compute the matrix <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" title="$\left ( X^{T}X \right )^{-1}$" /></a>**           
+- **Compute the matrix <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" title="$\left ( X^{T}X \right )^{-1}$" /></a>**          
+```r
+matrix_xT <- t(matrix_x)
+product_xx <- matrix_xT%*%matrix_x 
+reverse_x <- solve(product_xx)
+```
+- **Compute the variance for the residuals, by using the unbiased estimator <a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\sigma&space;}^{2}=\left&space;\|&space;y-X\widehat{\beta&space;}&space;\right&space;\|^{2}/\left&space;(&space;n-p-1&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\sigma&space;}^{2}=\left&space;\|&space;y-X\widehat{\beta&space;}&space;\right&space;\|^{2}/\left&space;(&space;n-p-1&space;\right&space;)$" title="$\widehat{\sigma }^{2}=\left \| y-X\widehat{\beta } \right \|^{2}/\left ( n-p-1 \right )$" /></a>**            
+```r
 
+```
 
 
 
