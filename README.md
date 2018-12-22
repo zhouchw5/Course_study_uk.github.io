@@ -131,6 +131,8 @@ from which we can obtain that
 We know that 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$E\left&space;[&space;\chi&space;^2\left&space;(&space;n-p&space;\right&space;)&space;\right&space;]=n-p$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$E\left&space;[&space;\chi&space;^2\left&space;(&space;n-p&space;\right&space;)&space;\right&space;]=n-p$" title="$E\left [ \chi ^2\left ( n-p \right ) \right ]=n-p$" /></a>, 
 and the variance 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$Var\left&space;[&space;\chi&space;^2\left&space;(&space;n-p&space;\right&space;)&space;\right&space;]=2\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$Var\left&space;[&space;\chi&space;^2\left&space;(&space;n-p&space;\right&space;)&space;\right&space;]=2\left&space;(&space;n-p&space;\right&space;)$" title="$Var\left [ \chi ^2\left ( n-p \right ) \right ]=2\left ( n-p \right )$" /></a>.            
+
 
 
 
