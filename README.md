@@ -91,7 +91,11 @@ We can find that std_beta0 = 43.7129977495838, which is consistent with the corr
 # the result is 4.805862e-05, which is also consistent with the std.error of the coefficient for the variable 'MRI_Count' shown in the summary above. 
 ```
 
-Next, based on the estimators and the standard deviations, we can proceed the hypothesis testing.       
+Next, based on the estimators and the standard deviations, we can proceed the hypothesis testing. We know that the Wald Tests are generally comfortable with a premise that n is large enough. When n is small, the Student's t distribution would give us finer (and more accurate non-asymptotic) result. But no matter for the Wald Tests or the t-statistic, we should compute 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$T=\left&space;(&space;\widehat{\beta&space;}_{j}-\beta&space;_{j0}&space;\right&space;)/SE\left&space;(&space;\widehat{\beta&space;}_{j}&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T=\left&space;(&space;\widehat{\beta&space;}_{j}-\beta&space;_{j0}&space;\right&space;)/SE\left&space;(&space;\widehat{\beta&space;}_{j}&space;\right&space;)$" title="$T=\left ( \widehat{\beta }_{j}-\beta _{j0} \right )/SE\left ( \widehat{\beta }_{j} \right )$" /></a>, 
+where we test the null hypotheses 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}=0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}=0$" title="$\beta _{j}=0$" /></a> 
+against the 
 
 
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
