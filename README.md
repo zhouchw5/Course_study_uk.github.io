@@ -78,8 +78,10 @@ residual_vector <- residual_vector*residual_vector
 sigma_sample <- sum(residual_vector)/(38-2)
 std_beta0 <- sqrt(sigma_sample*reverse_x[1][1])
 std_beta1 <- sqrt(sigma_sample*reverse_x[2][2])
+# Actually I have made a naive mistake here, the last statement should be revised as 
+# std_beta1 <- sqrt(sigma_sample*reverse_x[2,2])
 ```
-We can find that std_beta0 = 43.7129977495838, which is consistent with the corresponding data in the summary above, but std_beta1 = NA_real_, we can compute the std_beta1 more 'manually'.            
+We can find that std_beta0 = 43.7129977495838, which is consistent with the corresponding data in the summary above, but std_beta1 = NA_real_, we can compute the std_beta1 more 'manually'.             
 ```r
 > View(reverse_x)
 # we can find that reverse_x[2][2] = 5.133137e-12
