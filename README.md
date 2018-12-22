@@ -124,7 +124,8 @@ respectively. In this hypotheses testing process, the variables satisfying the n
 And the t-distribution with the freedom of (n-p) can be formulated as 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$Z=X/\sqrt{Y/(n-p)}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$Z=X/\sqrt{Y/(n-p)}$" title="$Z=X/\sqrt{Y/(n-p)}$" /></a>, 
 where X satisfies the normal distribution, Y is the Chi-square distribution 
-<a href="https://www.codecogs.com/eqnedit.php?latex=$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" title="$\chi ^{2}\left ( n-p \right )$" /></a>.             
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" title="$\chi ^{2}\left ( n-p \right )$" /></a>. So when we compare these two formulas:               
+
 
 
 
