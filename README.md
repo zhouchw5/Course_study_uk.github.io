@@ -113,7 +113,12 @@ And the output is
 > T_statistic_1
 [1] 2.447012
 ```
-which is consistent with the summary above.          
+which is consistent with the summary above. Then compared with t-distribution with the freedom 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$n-p=38-2=36$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$n-p=38-2=36$" title="$n-p=38-2=36$" /></a>, 
+we can obtain the corresponding p-values:             
+
+                      
+                      
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
 **_Yours,_**                         
 **_Chuwei Zhou_**                 
