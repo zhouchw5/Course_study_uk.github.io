@@ -115,7 +115,12 @@ And the output is
 ```
 which is consistent with the summary above. Then compared with t-distribution with the freedom 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$n-p=38-2=36$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$n-p=38-2=36$" title="$n-p=38-2=36$" /></a>, 
-we can obtain the corresponding p-values:             
+we can obtain the probabilities for 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_0}&space;\right&space;|$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_0}&space;\right&space;|$" title="$\left |T \right |>\left | T_{statistic_0} \right |$" /></a> 
+and 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" title="$\left |T \right |>\left | T_{statistic_1} \right |$" /></a> 
+respectively.              
+
 
                       
                       
