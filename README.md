@@ -106,8 +106,14 @@ and the value of the t-statistic for the coefficient related to MRI_Count
 ```r
 T_statistic_1 <- Beta_vector[2,1]/std_beta1
 ```
-
-
+And the output is            
+```r
+> T_statistic_0
+[1] 0.1066044
+> T_statistic_1
+[1] 2.447012
+```
+which is consistent with the summary above.          
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
 **_Yours,_**                         
 **_Chuwei Zhou_**                 
