@@ -95,7 +95,9 @@ Next, based on the estimators and the standard deviations, we can proceed the hy
 <a href="https://www.codecogs.com/eqnedit.php?latex=$T=\left&space;(&space;\widehat{\beta&space;}_{j}-\beta&space;_{j0}&space;\right&space;)/SE\left&space;(&space;\widehat{\beta&space;}_{j}&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$T=\left&space;(&space;\widehat{\beta&space;}_{j}-\beta&space;_{j0}&space;\right&space;)/SE\left&space;(&space;\widehat{\beta&space;}_{j}&space;\right&space;)$" title="$T=\left ( \widehat{\beta }_{j}-\beta _{j0} \right )/SE\left ( \widehat{\beta }_{j} \right )$" /></a>, 
 where we test the null hypotheses 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}=0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}=0$" title="$\beta _{j}=0$" /></a> 
-against the 
+against the alternatives 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}\neq&space;0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}\neq&space;0$" title="$\beta _{j}\neq 0$" /></a>.              
+
 
 
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
