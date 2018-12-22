@@ -13,7 +13,7 @@ BrainSize <- read.csv("BrainSize.csv")
 5 Female   99  90 110    146   69.0    928799
 # where we have visualized the first five rows of the data frame in Console.
 ```
-Basically, we just utilize the linear regression model considering the dependent variable PIQ related one type of regressor, MRI_Count.       
+Basically, we just utilize the linear regression model considering the dependent variable PIQ related to one type of regressor, MRI_Count.       
 ```r
 attach(BrainSize)
 BrainSizeLM1 <- lm(PIQ ~ MRI_Count)
@@ -69,9 +69,25 @@ reverse_x <- solve(product_xx)
 ```
 - **Compute the variance for the residuals, by using the unbiased estimator <a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\sigma&space;}^{2}=\left&space;\|&space;y-X\widehat{\beta&space;}&space;\right&space;\|^{2}/\left&space;(&space;n-p-1&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\sigma&space;}^{2}=\left&space;\|&space;y-X\widehat{\beta&space;}&space;\right&space;\|^{2}/\left&space;(&space;n-p-1&space;\right&space;)$" title="$\widehat{\sigma }^{2}=\left \| y-X\widehat{\beta } \right \|^{2}/\left ( n-p-1 \right )$" /></a>**            
 ```r
-
+Beta_vector <- as.matrix(c(4.660e+00, 1.176e-04))
+vector_XB <- matrix_x%*%Beta_vector
+vector_XB <- c(vector_XB)
+y <- c(BrainSize$PIQ) 
+residual_vector <- y - vector_XB
+residual_vector <- residual_vector*residual_vector
+sigma_sample <- sum(residual_vector)/(38-2)
+std_beta0 <- sqrt(sigma_sample*reverse_x[1][1])
+std_beta1 <- sqrt(sigma_sample*reverse_x[2][2])
 ```
-
+We can find that std_beta0 = 43.7129977495838, which is consistent with the corresponding data in the summary above, but std_beta1 = NA_real_, we can compute the std_beta1 more 'manually'.            
+```r
+> View(reverse_x)
+# we can find that reverse_x[2][2] = 5.133137e-12
+>sigma_sample*5.133137e-12
+# the result of sigma_sample*5.133137e-12 is 2.309631e-09
+>sqrt(2.309631e-09)
+# the result is 4.805862e-05
+```
 
 
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
