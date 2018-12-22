@@ -125,7 +125,10 @@ And the t-distribution with the freedom of (n-p) can be formulated as
 <a href="https://www.codecogs.com/eqnedit.php?latex=$Z=X/\sqrt{Y/(n-p)}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$Z=X/\sqrt{Y/(n-p)}$" title="$Z=X/\sqrt{Y/(n-p)}$" /></a>, 
 where X satisfies the normal distribution, Y is the Chi-square distribution 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" title="$\chi ^{2}\left ( n-p \right )$" /></a>. So when we compare these two formulas:               
-![formula_1 for Chi-square distribution](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-Session5_linear-Regression/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181222211754.png)
+![formula_1 for Chi-square distribution](https://github.com/zhouchw5/Course_study_uk.github.io/blob/R-Session5_linear-Regression/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181222211754.png)            
+from which we can obtain that 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\sigma&space;}^2&space;\sim&space;\sigma&space;^{2}\chi&space;^2\left&space;(&space;n-p&space;\right&space;)/\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\sigma&space;}^2&space;\sim&space;\sigma&space;^{2}\chi&space;^2\left&space;(&space;n-p&space;\right&space;)/\left&space;(&space;n-p&space;\right&space;)$" title="$\widehat{\sigma }^2 \sim \sigma ^{2}\chi ^2\left ( n-p \right )/\left ( n-p \right )$" /></a>.                     
+
 
 
 
