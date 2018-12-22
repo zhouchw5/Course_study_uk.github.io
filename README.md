@@ -96,8 +96,16 @@ Next, based on the estimators and the standard deviations, we can proceed the hy
 where we test the null hypotheses 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}=0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}=0$" title="$\beta _{j}=0$" /></a> 
 against the alternatives 
-<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}\neq&space;0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}\neq&space;0$" title="$\beta _{j}\neq 0$" /></a>.              
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{j}\neq&space;0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{j}\neq&space;0$" title="$\beta _{j}\neq 0$" /></a>.            
+For the intercept 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\beta&space;_{0}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\beta&space;_{0}$" title="$\beta _{0}$" /></a>,           
+```r
+T_statistic_0 <- Beta_vector[1,1]/std_beta0
+```
+and the value of the t-statistic for the coefficient related to MRI_Count        
+```r
+T_statistic_1 <- Beta_vector[2,1]/std_beta1
+```
 
 
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
