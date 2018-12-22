@@ -119,7 +119,10 @@ we can obtain the probabilities for
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_0}&space;\right&space;|$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_0}&space;\right&space;|$" title="$\left |T \right |>\left | T_{statistic_0} \right |$" /></a> 
 and 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" title="$\left |T \right |>\left | T_{statistic_1} \right |$" /></a> 
-respectively.              
+respectively. In this hypotheses testing process, the variables satisfying the normal distribution are 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" title="$\widehat{\beta }_{i}/\left ( \widehat{\sigma }^{2}\left [ X^{T}X \right ]^{-1}_{j+1,j+1} \right )^{1/2}$" /></a>, 
+
+
 
 
                       
