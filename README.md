@@ -120,7 +120,11 @@ we can obtain the probabilities for
 and 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;|T&space;\right&space;|>\left&space;|&space;T_{statistic_1}&space;\right&space;|$" title="$\left |T \right |>\left | T_{statistic_1} \right |$" /></a> 
 respectively. In this hypotheses testing process, the variables satisfying the normal distribution are 
-<a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" title="$\widehat{\beta }_{i}/\left ( \widehat{\sigma }^{2}\left [ X^{T}X \right ]^{-1}_{j+1,j+1} \right )^{1/2}$" /></a>, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\widehat{\beta&space;}_{i}/\left&space;(&space;\widehat{\sigma&space;}^{2}\left&space;[&space;X^{T}X&space;\right&space;]^{-1}_{j&plus;1,j&plus;1}&space;\right&space;)^{1/2}$" title="$\widehat{\beta }_{i}/\left ( \widehat{\sigma }^{2}\left [ X^{T}X \right ]^{-1}_{j+1,j+1} \right )^{1/2}$" /></a>. 
+And the t-distribution with the freedom of (n-p) can be formulated as 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$Z=X/\sqrt{Y/(n-p)}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$Z=X/\sqrt{Y/(n-p)}$" title="$Z=X/\sqrt{Y/(n-p)}$" /></a>, 
+where X satisfies the normal distribution, Y is the Chi-square distribution 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\chi&space;^{2}\left&space;(&space;n-p&space;\right&space;)$" title="$\chi ^{2}\left ( n-p \right )$" /></a>.             
 
 
 
