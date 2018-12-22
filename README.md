@@ -59,8 +59,9 @@ can be formulated as
 ```r
 x_1 <- c(BrainSize$MRI_Count)
 x_0 <- x1 <- c(rep(1, times = 38))
-
+matrix_x <- cbind(x1, test)
 ```
+- **Compute the matrix <a href="https://www.codecogs.com/eqnedit.php?latex=$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" title="$\left ( X^{T}X \right )^{-1}$" /></a>**           
 
 
 
