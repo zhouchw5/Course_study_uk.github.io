@@ -150,11 +150,11 @@ when (n-p) is large enough.
 
 
                       
-![white](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Fundamental-Algorithms-Practice_20181107/white.png)                          
+![white](https://github.com/zhouchw5/Course_study_uk.github.io/blob/Fundamental-Algorithms-Practice_20181107/white.png)                               
 Thanks for Dr.YN.Chen leading us to explore the statistical world                                        
 **_Yours,_**                         
 **_Chuwei Zhou_**                 
 **_2018.12.19_**                     
  
-
+ 
        
