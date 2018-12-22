@@ -34,8 +34,7 @@ public class nonrepeatedString {
 		
 		for(int i = 0; i < test.length(); i++) {
 			int end = test.length()-1;
-			end = repeatedIndex(test, i, end);
-			for (int j = i+1; j<end; j++) {				
+			for (int j = i; j<end; j++) {				
 				end = repeatedIndex(test, j, end);				
 			}
 			lengthSub[i] = end - i + 1;
