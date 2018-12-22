@@ -54,6 +54,7 @@ we know that the variance for the LSE
 can be formulated as 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$Var\left&space;(&space;\widehat{\beta&space;}&space;\right&space;)=\sigma&space;^{2}\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$Var\left&space;(&space;\widehat{\beta&space;}&space;\right&space;)=\sigma&space;^{2}\left&space;(&space;X^{T}X&space;\right&space;)^{-1}$" title="$Var\left ( \widehat{\beta } \right )=\sigma ^{2}\left ( X^{T}X \right )^{-1}$" /></a>. For the learning purpose, we can verify whether the standard deviation is               
 <a href="https://www.codecogs.com/eqnedit.php?latex=$std(\beta_{0}&space;)&space;=&space;4.371*10^{1}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$std(\beta_{0}&space;)&space;=&space;4.371*10^{1}$" title="$std(\beta_{0} ) = 4.371*10^{1}$" /></a>, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$std(\beta_{1}&space;)&space;=&space;4.806*10^{-5}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$std(\beta_{1}&space;)&space;=&space;4.806*10^{-5}$" title="$std(\beta_{1} ) = 4.806*10^{-5}$" /></a>.                 
 
 
 
