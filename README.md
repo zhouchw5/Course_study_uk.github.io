@@ -86,7 +86,7 @@ We can find that std_beta0 = 43.7129977495838, which is consistent with the corr
 >sigma_sample*5.133137e-12
 # the result of sigma_sample*5.133137e-12 is 2.309631e-09
 >sqrt(2.309631e-09)
-# the result is 4.805862e-05
+# the result is 4.805862e-05, which is also consistent with the std.error of the coefficient for the variable 'MRI_Count' shown in the summary above. 
 ```
 
 
