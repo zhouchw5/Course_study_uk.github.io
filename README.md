@@ -80,6 +80,51 @@ public class LongestMirrorSequence {
 			}
 		}
 
+```                  
+                
+```java
+		for (int i=0; i<c.length-1; i++) {
+			for (int j=i+1; j<c.length; j++) {
+				if (equality[i][j]==1) {
+					if(j==i+1) {
+						longestLength[i][j] = 2;
+						LongestMirrorSequence r1 = new LongestMirrorSequence(i,j);
+						previousLabel[i][j] = r1;
+						
+					}else {
+						longestLength[i][j] = 3;
+						LongestMirrorSequence r2 = new LongestMirrorSequence(i+1,i+1);
+						previousLabel[i][j] = r2;
+					}
+					if ((i!=0)&&(j!=c.length-1)) {
+						for (int a=0; a<i; a++) {
+							for (int b=j+1; b<c.length; b++) {
+								if (c[a]==c[b]) {
+									int max_previous = longestLength[i][j];
+									int previous_a = i;
+									int previous_b = j;
+									for (int a1=a+1;a1<=i; a1++) {
+										for (int b1=b-1; b1>=j; b1--) {
+											if ((c[a1]==c[b1])&&(longestLength[a1][b1]>=max_previous)) {
+												max_previous = longestLength[a1][b1];
+												previous_a = a1;
+												previous_b = b1;
+											}
+										}
+									}
+									if ((max_previous+2) > longestLength[a][b]) {
+										longestLength[a][b] = max_previous+2;
+										LongestMirrorSequence r3 = new LongestMirrorSequence(previous_a, previous_b);
+										previousLabel[a][b] = r3; 
+									}
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 ```
 Yours,             
 Chuwei Zhou             
