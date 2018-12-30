@@ -1,4 +1,4 @@
-# Palindrome, the Longest Mirror Sequence, a Strange Performance VS  in Java                   
+# Palindrome, the Longest Mirror Sequence, a Strange Performance VS an Ordinary Performance in Java                   
 A sequence of characters can be shown as x = x[0] x[1] ... x[n].                
 
 
