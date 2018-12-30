@@ -47,7 +47,40 @@ public class LongestMirrorSequence {
 		// if the interval between the equality pair c[i] and c[j] has no other pair with the same character, equality[i][j] = 1, otherwise equality[i][j] = 2;  
 		// for example, ABCA, equality[0][3] = 1; but for ACBFCA, equality[0][5] = 2;
 ```
-               
+              
+```java
+		for (int i=0; i<c.length; i++) {
+			c[i] = args[0].charAt(i);
+			LongestMirrorSequence r = new LongestMirrorSequence(i,i);
+			previousLabel[i][i] = r;
+			longestLength[i][i] = 1;
+		}		
+		
+		for (int i=0; i<c.length-1; i++) {
+			for (int j=i+1; j<c.length; j++) {
+				if (c[i]==c[j]) {
+					if ((j-i)<=2) {
+						equality[i][j] = 1;
+					} else {
+						boolean containing = false;
+						for (int l=i+1; l<j-1; l++) {
+							for (int h=l+1; h<j; h++) {
+								if(c[l] == c[h]) {
+									containing = true;
+								}
+							}
+						}
+						if (containing) {
+							equality[i][j] = 2;
+						}else if(!containing) {
+							equality[i][j] = 1;
+						}
+					}
+				}
+			}
+		}
+
+```
 Yours,             
 Chuwei Zhou             
 2018.12.30             
