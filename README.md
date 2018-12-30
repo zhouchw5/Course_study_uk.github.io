@@ -125,6 +125,43 @@ public class LongestMirrorSequence {
 				}
 			}
 		}
+```            
+               
+```java
+		int maxlongestMirror = 1;
+		int longestStart = 0;
+		int longestEnd = 0;
+		for (int i=0; i<c.length; i++) {
+			for (int j=0; j<c.length; j++) {
+				if (longestLength[i][j] > maxlongestMirror) {
+					maxlongestMirror = longestLength[i][j];
+					longestStart = i;
+					longestEnd = j;
+				}
+			}
+		}
+		System.out.println("length of longest mirror sequence: " + maxlongestMirror);
+		
+		char[] out = new char[maxlongestMirror];
+		int printCount = 0;
+		while (printCount<=((maxlongestMirror-1)/2)) {
+			out[printCount] = c[longestStart];
+			out[out.length-1-printCount] = c[longestEnd];
+			int start, end;
+			start = previousLabel[longestStart][longestEnd].previous_start();
+			end = previousLabel[longestStart][longestEnd].previous_end();
+			longestStart = start;
+			longestEnd = end;
+			printCount++;
+		}
+		
+		System.out.print("corresponding sequence: ");
+		for (int i=0; i<out.length; i++) {
+			System.out.print( out[i] + " ");
+		}
+		System.out.println("");
+	}
+}
 ```
 Yours,             
 Chuwei Zhou             
