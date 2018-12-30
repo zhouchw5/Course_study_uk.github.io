@@ -157,3 +157,7 @@ public class LongestMirrorSequence {
 	}
 }
 ```
+               
+Yours,             
+Chuwei Zhou             
+2018.12.30             
