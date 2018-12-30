@@ -1,5 +1,9 @@
 # Palindrome, the Longest Mirror Sequence, a Strange Performance VS an Ordinary Performance in Java                   
-A sequence of characters can be shown as x = x[0] x[1] ... x[n].                
+A sequence of characters can be shown as x = x[0] x[1] ... x[n]. A subsequence 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$x[i_1],&space;x[i_2],&space;...,&space;x[i_l]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$x[i_1],&space;x[i_2],&space;...,&space;x[i_l]$" title="$x[i_1], x[i_2], ..., x[i_l]$" /></a> 
+of x is called a palindrome if it equals to 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$x[i_l],&space;x[i_{l-1}],&space;...,&space;x[i_1]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$x[i_l],&space;x[i_{l-1}],&space;...,&space;x[i_1]$" title="$x[i_l], x[i_{l-1}], ..., x[i_1]$" /></a>. 
+
 
 
 Suppose that my architect has been limited that I could only focus on the pair i and j with x[i] = x[j].                
