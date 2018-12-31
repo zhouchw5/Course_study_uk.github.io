@@ -196,7 +196,9 @@ After constructing the initialized states, we should figure out the relation bet
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = i;              
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[i][j] = j;             
 &nbsp; &nbsp; &nbsp; else (i+1 = j)                   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mirror[i][j] = 2;             
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = i;            
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[i][j] = j;                   
 
 Yours,             
 Chuwei Zhou             
