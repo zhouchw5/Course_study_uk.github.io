@@ -183,7 +183,8 @@ class LongestMirrorSequence {
         int[][] end = new int[n][n];
 ```
 After constructing the initialized states, we should figure out the relation between a current problem and its sub-problem, as what we used to do in dynamic programming.               
-- if ((i<j)&&(x[i] != x[j])) 
+- if ((i<j)&&(x[i] != x[j]))        
+&nbsp; &nbsp; &nbsp; mirror[i][j] = max{ mirror[i+1][j], mirror[i][j-1]}  
 		     
 Yours,             
 Chuwei Zhou             
