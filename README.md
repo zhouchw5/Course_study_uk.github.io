@@ -167,7 +167,7 @@ public class LongestMirrorSequence {
 ```                  
                         
 			
-We can see that this solution can be simplified in many ways, as long as we liberate ourselves from the the shackles of only considering the pairs i and j with x[i] = x[j].                                
+We can see that this solution can be simplified in many ways, as long as we liberate ourselves from the the shackles of only considering the pairs i and j with x[i] = x[j]. We can consider all the pairs i and j, and store the information including the the length of the longest padindrome within a pair i and j, and the corresponding staring/ending points.                                  
                      
 		     
 Yours,             
