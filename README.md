@@ -167,9 +167,20 @@ public class LongestMirrorSequence {
 ```                  
                         
 			
-We can see that this solution can be simplified in many ways, as long as we liberate ourselves from the the shackles of only considering the pairs i and j with x[i] = x[j]. We can consider all the pairs i and j, and store the information including the the length of the longest padindrome within a pair i and j, and the corresponding staring/ending points. The following is the solution from Dr Konrad Swanepoel.               
+We can see that this solution can be simplified in many ways, as long as we liberate ourselves from the the shackles of only considering the pairs i and j with x[i] = x[j]. We can consider all the pairs i and j, and store the information including the the length of the longest padindrome within a pair i and j, and the corresponding staring/ending points. The following is the solution from Dr Konrad Swanepoel.                               
+                        
+We construct a matrix mirror[i][j] containing the length of a longest mirror sequence.              			
 ```java
+class LongestMirrorSequence {
 
+    public static void main(String[] args) {
+        if (args.length == 0)
+            return;
+        char[] x = args[0].toCharArray();
+        int n = x.length;
+        int[][] mirror = new int[n][n];
+        int[][] start = new int[n][n];
+        int[][] end = new int[n][n];
 ```
                      
 		     
