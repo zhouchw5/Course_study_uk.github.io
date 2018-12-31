@@ -199,7 +199,9 @@ After constructing the initialized states, we should figure out the relation bet
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mirror[i][j] = 2;             
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = i;            
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[i][j] = j;                   
-
+                 
+With these inductions, the final value maximum length would be stored in mirror[0][n-1].                            
+	       
 Yours,             
 Chuwei Zhou             
 2018.12.30             
