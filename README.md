@@ -255,7 +255,8 @@ We have stopped before e==s, which can avoid taking the middle character twice i
     }
 }
 ```
- 	    
-Yours,             
-Chuwei Zhou             
-2018.12.30             
+                    
+		    
+**Yours,**                          
+**Chuwei Zhou**                              
+**2018.12.30**                                
