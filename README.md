@@ -189,7 +189,15 @@ After constructing the initialized states, we should figure out the relation bet
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = start[i+1][j] and end[i][j] = end[i+1][j]              
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (mirror[i][j-1] is larger)                  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = start[i][j-1] and end[i][j] = end[i][j-1]                   
-		  
+                
+- if ((i<j)&&(x[i] = x[j]))        
+&nbsp; &nbsp; &nbsp; if ((i+1)<=(j-1))         
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mirror[i][j] = mirror[i+1][j-1] + 2;               
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = i;              
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[i][j] = j;             
+&nbsp; &nbsp; &nbsp; else (i+1 = j)                   
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                  
+
 Yours,             
 Chuwei Zhou             
 2018.12.30             
