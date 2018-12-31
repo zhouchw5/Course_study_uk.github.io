@@ -200,7 +200,51 @@ After constructing the initialized states, we should figure out the relation bet
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = i;            
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[i][j] = j;                   
                  
-With these inductions, the final value maximum length would be stored in mirror[0][n-1].                            
+With these inductions, the final value maximum length would be stored in mirror[0][n-1].                       
+```java
+        for (int j = 0; j < n; j++) {
+            for (int i = j; i >= 0; i--) {
+                if (i == j) {
+                    mirror[i][j] = 1;
+                    start[i][j] = i;
+                    end[i][j] = j;
+                } else { // i < j
+                    if (x[i] == x[j]) {
+                        start[i][j] = i;
+                        end[i][j] = j;
+                        if (i+1 == j) {
+                            mirror[i][j] = 2;
+                        } else { // i+1 < j
+                            mirror[i][j] = mirror[i+1][j-1] + 2;
+                        }
+                    } else { // x[i] != x[j]
+                        if (mirror[i+1][j] > mirror[i][j-1]) {
+                            mirror[i][j] = mirror[i+1][j];
+                            start[i][j] = start[i+1][j];
+                            end[i][j] = end[i+1][j];
+                        } else {
+                            mirror[i][j] = mirror[i][j-1];
+                            start[i][j] = start[i][j-1];
+                            end[i][j] = end[i][j-1];
+                        }
+                    }       
+                }
+            }
+        }
+        System.out.println("Length of longest mirror sequence: " + mirror[0][n-1]);
+        int s = start[0][n-1];
+        int e = end[0][n-1];
+        String forward = "";
+        String backward = "";
+        while (e-s > 1) {
+            forward = forward + x[s];
+            backward = x[e] + backward;
+            int sTemp = s;
+            int eTemp = e;
+            s = start[sTemp+1][eTemp-1];
+            e = end[sTemp+1][eTemp-1];
+        }
+```
 	       
 Yours,             
 Chuwei Zhou             
