@@ -164,7 +164,9 @@ public class LongestMirrorSequence {
 		System.out.println("");
 	}
 }
-```
+```                  
+                                    
+We can see that this solution can be simplified in many ways, as long as we liberate ourselves from the the shackles of only considering the pairs i and j with x[i] = x[j]. 				    
 Yours,             
 Chuwei Zhou             
 2018.12.30             
