@@ -186,8 +186,9 @@ After constructing the initialized states, we should figure out the relation bet
 - if ((i<j)&&(x[i] != x[j]))        
 &nbsp; &nbsp; &nbsp; mirror[i][j] = max{ mirror[i+1][j], mirror[i][j-1]}  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (mirror[i+1][j] is larger)                   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = start[i+1][j] and end[i][j] = end[i+1][j]             
-
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = start[i+1][j] and end[i][j] = end[i+1][j]              
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (mirror[i][j-1] is larger)                  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; start[i][j] = start[i][j-1] and end[i][j] = end[i][j-1]                   
 		  
 Yours,             
 Chuwei Zhou             
