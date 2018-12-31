@@ -182,7 +182,7 @@ class LongestMirrorSequence {
         int[][] start = new int[n][n];
         int[][] end = new int[n][n];
 ```
-                     
+After constructing the initialized states, we should figure out the relation between a current problem and its sub-problem, as what we used to do in dynamic programming.                       
 		     
 Yours,             
 Chuwei Zhou             
