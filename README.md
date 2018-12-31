@@ -245,7 +245,17 @@ With these inductions, the final value maximum length would be stored in mirror[
             e = end[sTemp+1][eTemp-1];
         }
 ```
-	       
+We have stopped before e==s, which can avoid taking the middle character twice if the number of characters is odd.           
+```java
+        forward = forward + x[s];
+        if (e-s==1) { // There are exactly two characters left
+            backward = x[e] + backward;
+        }
+        System.out.println("Corresponding sequence: " + forward + backward);
+    }
+}
+```
+	    
 Yours,             
 Chuwei Zhou             
 2018.12.30             
