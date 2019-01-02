@@ -19,6 +19,7 @@ Based on our induction analysis, the final step is to merge two sorted sub-array
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if done with left part, copy from right part            
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (iLeft >= left.length) {x[i] = right[iRight]; iRight++;}        
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if done with right part, copy from left part          
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (iRight >= right.length) {x[i] = left[iLeft]; iLeft++;}           
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     
                     
