@@ -20,7 +20,10 @@ Based on our induction analysis, the final step is to merge two sorted sub-array
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (iLeft >= left.length) {x[i] = right[iRight]; iRight++;}        
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if done with right part, copy from left part          
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (iRight >= right.length) {x[i] = left[iLeft]; iLeft++;}           
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if ( left[iLeft] <= right[iRight] )           
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if ( left[iLeft] <= right[iRight] )              
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //**meaning that right[irRight-1] has been 'beaten' by one of the current**      
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //**entries, of wich the largest one is left[iLeft],**        
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //**so left[iLeft] >= right[iRight-1] as well**                                
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **x[i] = left[iLeft]; iLeft++;**           
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else // meaning left[iLeft] > right[iRight]                                
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **x[i] = right[iRight];iRight++;**          
