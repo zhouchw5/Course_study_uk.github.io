@@ -23,7 +23,9 @@ Based on our induction analysis, the final step is to merge two sorted sub-array
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if ( left[iLeft] <= right[iRight] )           
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **x[i] = left[iLeft]; iLeft++;**           
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else // meaning left[iLeft] > right[iRight]                                
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {**x[i] = right[iRight];iRight++;**}                                   
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **x[i] = right[iRight];iRight++;**          
+                  
+                  
                     
                     
 
