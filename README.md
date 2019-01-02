@@ -15,7 +15,11 @@ Based on our induction analysis, the final step is to merge two sorted sub-array
                  
 &nbsp; &nbsp; &nbsp; &nbsp; int iLeft = 0; int iRight = 0;                
 &nbsp; &nbsp; &nbsp; &nbsp; //we start the comparison fairly from the corresponding first elements of left sub-array and right sub-array         
-
+&nbsp; &nbsp; &nbsp; &nbsp; for (int i=start; i<end ; i++)                 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if done with left part, copy from right part            
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (iLeft >= left.length) {x[i] = right[iRight]; iRight++;}        
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // if done with right part, copy from left part          
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     
                     
 
