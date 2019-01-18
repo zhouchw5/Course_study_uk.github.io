@@ -14,7 +14,7 @@ After adding the SSH key to the ssh-agent and copying the SSH key from the defau
 And the next step is to get access to Google Cloud Platform (GCP) by using a gmail account and install the Google Cloud SDK.              
 ![the interface of GCP](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/GCP.png)              
                      
-Some basic operations in Google Cloud SDK(Software Development Kit):             
+Some basic operations in Google Cloud SDK(Software Development Kit):
 - hahahah              
 
 
