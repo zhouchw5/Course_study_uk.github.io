@@ -16,7 +16,7 @@ And the next step is to get access to Google Cloud Platform (GCP) by using a gma
                      
 Some basic operations in Google Cloud SDK(Software Development Kit):
 - Creating/Deleting Storage Buckets                 
-
+![buckets](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/buckets.png)          
 - Uploading/Downloading Files from Storage Buckets             
 - Creating/Deleting a Google Cloud Dataproc Cluster
 
