@@ -7,7 +7,8 @@ $ ssh-keygen -t rsa -b 4096 -C "(this should be my email address)"
 # Enter passphrase (empty for no passphrase): [Type a passphrase]
 # Enter same passphrase again: [Type passphrase again]
 ```
-                  
+               
+After adding the SSH key to the ssh-agent and copying the SSH key from the defaulted file to the clipboard, we can add this new SSH key to a Github account.                          
                   
                     
                     
