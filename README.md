@@ -1,5 +1,5 @@
-# Development Environment Constructed in the Distributed Computing for Big Data                                                                                        
-
+# Development Environment Constructed in the Distributed Computing for Big Data                                                                                             
+With taking my original github account as private, 
                   
                   
                     
