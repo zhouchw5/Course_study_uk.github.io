@@ -21,6 +21,8 @@ Some basic operations in Google Cloud SDK(Software Development Kit):
 ![file](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/file.png)        
 - Creating/Deleting a Google Cloud Dataproc Cluster                  
 ![cluster](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/cluster.png)                    
+                   
+The corresponding Google Cloud SDK approaches can be shown as:                
 
 
                   
