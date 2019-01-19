@@ -50,10 +50,10 @@ gcloud dataproc jobs submit pyspark --cluster chuweizhou helloworld.py
 # Delete a cluster:
 gcloud dataproc clusters delete chuweizhou
 # Delete the bucket:
-gsutil rm -r gs://chuwei
-
-
+gsutil rm -r gs://chuwei                             
 ```
+                  
+Now we can try to run the Jupyter notebooks on Google Cloud Dataproc clusters.                 
 
                   
                     
