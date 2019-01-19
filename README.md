@@ -32,6 +32,15 @@ gsutil mb gs://chuwei/
 gsutil cp helloworld.py gs://chuwei
 # Check the file lists inside the bucket:            
 gsutil ls gs://chuwei
+# Download a file (we can also do it by Google Cloud Console approach):           
+gsutil cp gs://my-bucket/helloworld.py Desktop
+# Remove a file: 
+gsutil rm gs://chuwei/helloworld.py
+# Remove the whole bucket:
+gsutil rm -r gs://chuwei
+# Before running jobs on a Google Cloud dataproc cluster, firstly to create a cluster: 
+# like a new cluster name chuweizhou, within a project with the id 01234
+gcloud dataproc clusters create chuweizhou --project 01234 --bucket chuwei
 
 ```
 
