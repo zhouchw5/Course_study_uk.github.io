@@ -26,8 +26,13 @@ The corresponding Google Cloud SDK approaches can be shown as:
 ```python
 # see what buckets we have:
 gsutil ls
-# Create a bucket, for example creating a bucket named chuwei: 
+# Create a bucket, for example creating a bucket named chuwei (if a bucket with the same name has been already created in your project, an error would come up with the exceptions):                  
 gsutil mb gs://chuwei/
+# Upload a file, for example helloworld.py
+gsutil cp helloworld.py gs://chuwei
+# Check the file lists inside the bucket:            
+gsutil ls gs://chuwei
+
 ```
 
                   
