@@ -53,7 +53,8 @@ gcloud dataproc clusters delete chuweizhou
 gsutil rm -r gs://chuwei                             
 ```
                   
-Now we can try to run the Jupyter notebooks on Google Cloud Dataproc clusters.                 
+Now we can try to run the Jupyter notebooks on Google Cloud Dataproc clusters, by setting up a dataproc cluster for PySpark and connect it to a Jupyter notebook.           
+
 
                   
                     
