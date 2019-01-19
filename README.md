@@ -23,7 +23,12 @@ Some basic operations in Google Cloud SDK(Software Development Kit):
 ![cluster](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/cluster.png)                    
                    
 The corresponding Google Cloud SDK approaches can be shown as:                
-
+```python
+# see what buckets we have:
+gsutil ls
+# Create a bucket, for example creating a bucket named chuwei: 
+gsutil mb gs://chuwei/
+```
 
                   
                     
