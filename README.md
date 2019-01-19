@@ -18,8 +18,9 @@ Some basic operations in Google Cloud SDK(Software Development Kit):
 - Creating/Deleting Storage Buckets                 
 ![buckets](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/buckets.png)          
 - Uploading/Downloading Files from Storage Buckets              
-![](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/file.png)        
-- Creating/Deleting a Google Cloud Dataproc Cluster
+![file](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/file.png)        
+- Creating/Deleting a Google Cloud Dataproc Cluster                  
+![cluster](https://github.com/zhouchw5/Course_study_uk.github.io/blob/development-environment-constructing-in-Big-Data-course/cluster.png)                    
 
 
                   
