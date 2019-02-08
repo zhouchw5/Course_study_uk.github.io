@@ -11,5 +11,12 @@ for (i in 1:nrow(test)) {
   constraint_matrix_0[i,i] <- 1
 }
 ```
-
+No.1 constraint: the maximum supply of each son item;
+```r
+constraint_matrix <- constraint_matrix_0
+for (j in 1:nrow(supply)) {
+  vector_ratio <- bom$Ratio[bom$`Son Item`== bom_matrix[j,2]]
+  constraint_matrix <- rbind(constraint_matrix, vector_ratio)
+}
+```
 
