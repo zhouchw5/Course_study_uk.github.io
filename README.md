@@ -1,5 +1,7 @@
 # Integer Programming and the Iteration Allocation Model                
-## Introduction               
+## Introduction                 
+### The Standard Form of Linear Programming               
+
                 
 In order for the convenience to merge different data frames and assign different sub-set of a data frame, I just set that each data frame would have its own matrix form. And for uniformity, in the BOM (bill of materials) data set, the order of the parent items corresponding to a son item would be the same to that of the parent items in forecast demand, and the order of the son items corresponding to a parent item would be the same to that of the son items in supply data set.                                     
 ## Constraint Matrix          
