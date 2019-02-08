@@ -1,6 +1,7 @@
 # Integer Programming and the Iteration Allocation Model                
 ## Introduction               
-
+                
+In order for the convenience to merge different data frames and assign different sub-set of a data frame, I just set that each data frame would have its own matrix form.                                    
 ## Constraint Matrix          
 
 No.0 constraint: the number of each complete machine would not exceed the forecast demand;      
