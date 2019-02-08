@@ -1,4 +1,4 @@
-# Integer Programming and the Iteration Allocation Model                
+# Linear Programming and the Iteration Allocation Model                
 ## Introduction                 
 ### The Standard Form of Linear Programming               
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}&space;max&space;\begin{matrix}&space;&&space;C^T&space;x\end{matrix}\\&space;Ax\leq&space;b\\&space;x\geq&space;0&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;max&space;\begin{matrix}&space;&&space;C^T&space;x\end{matrix}\\&space;Ax\leq&space;b\\&space;x\geq&space;0&space;\end{matrix}\right." title="\left\{\begin{matrix} max \begin{matrix} & C^T x\end{matrix}\\ Ax\leq b\\ x\geq 0 \end{matrix}\right." /></a>            
@@ -14,7 +14,9 @@ dir <- c("<=", "<=")
 rhs <- c(1,1)
 max <- T
 ```
-                
+Actually we should have used the Integer Programming in our model, with some simple revises changing the variables type within the library Rsymphony. But as the extension of the feasible region, we keep using linear programming here.               
+                      
+                      
 In order for the convenience to merge different data frames and assign different sub-set of a data frame, I just set that each data frame would have its own matrix form. And for uniformity, in the BOM (bill of materials) data set, the order of the parent items corresponding to a son item would be the same to that of the parent items in forecast demand, and the order of the son items corresponding to a parent item would be the same to that of the son items in supply data set.                                     
 ## Constraint Matrix          
 
