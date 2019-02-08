@@ -18,5 +18,6 @@ for (j in 1:nrow(supply)) {
   vector_ratio <- bom$Ratio[bom$`Son Item`== bom_matrix[j,2]]
   constraint_matrix <- rbind(constraint_matrix, vector_ratio)
 }
+rownames(constraint_matrix) <- NULL
 ```
 
