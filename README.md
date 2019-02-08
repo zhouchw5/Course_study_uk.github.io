@@ -30,6 +30,12 @@ for (i in 1:nrow(test)) {
 ```
 No.1 constraint: the maximum supply of each son item;
 ```r
+bom <- read_excel('test.xlsx', sheet = "BOM")
+bom_matrix <- as.matrix(bom) # the matrix form of the bill of materials
+supply <- read_excel('test.xlsx', sheet = "supply")
+supply[is.na(supply)] <- 0
+supply_matrix <- as.matrix(supply) # the matrix form of the supply data set
+
 constraint_matrix <- constraint_matrix_0
 for (j in 1:nrow(supply)) {
   vector_ratio <- bom$Ratio[bom$`Son Item`== bom_matrix[j,2]]
