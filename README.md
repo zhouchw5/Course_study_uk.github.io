@@ -1,4 +1,4 @@
-# Linear Programming and the Iteration Allocation Model                
+# Greedy 2 Algorithm for Set Cover Performed in Java                                  
 ## Introduction                 
 ### The Standard Form of Linear Programming               
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}&space;max&space;\begin{matrix}&space;&&space;C^T&space;x\end{matrix}\\&space;Ax\leq&space;b\\&space;x\geq&space;0&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;max&space;\begin{matrix}&space;&&space;C^T&space;x\end{matrix}\\&space;Ax\leq&space;b\\&space;x\geq&space;0&space;\end{matrix}\right." title="\left\{\begin{matrix} max \begin{matrix} & C^T x\end{matrix}\\ Ax\leq b\\ x\geq 0 \end{matrix}\right." /></a>            
