@@ -61,7 +61,89 @@ for (j in 1:nrow(supply)) {
 }
 rownames(constraint_matrix) <- NULL
 ```
-                     
+## Iteration of Linear Programming Models by Week                                     
+```r
+for (k in 1:12) {
+  if (k==1) {
+    rhs <- c(as.numeric(test_matrix[,2]), as.numeric(supply_matrix[,2]))
+    obj <- c(rep(1, times = nrow(test)))
+    mat <- constraint_matrix
+    dir <- c(rep("<=" ,times = nrow(constraint_matrix)))
+    max <- T
+    order <- Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`
+    parent_name <- as.character(bom$`Parent Item`[bom$`Son Item` == bom_matrix[1,2]])
+    
+    order <- cbind(parent_name, order)
+    order <- as.data.frame(order)
+    names(order) <- c("Parent Item","Demand")
+    order_byWeek <- merge(order, bom, by.x = 'Parent Item')
+    order_son_item <- as.numeric(as.vector(order_byWeek$Demand))*as.numeric(as.vector((order_byWeek$Ratio)))
+    order_byWeek <- cbind(order_byWeek, order_son_item)
+    
+    # the rest demand of complete machines:
+    order_rest_parent_item <- test$Week1 - Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`
+    order_newWeek_parent_item <- order_rest_parent_item + as.numeric(test_matrix[,3])
+    
+    # the next supply source in the next week:
+    for (t in 1:nrow(supply_matrix)) {
+      son_item_demand <- order_byWeek$order_son_item[order_byWeek$`Son Item`==bom_matrix[t,2]]
+      sum_son_item_demand <- sum(son_item_demand)
+      if (t==1) {
+        order_per_son_item <- c(sum_son_item_demand)
+      } else {
+        order_per_son_item <- c(order_per_son_item, sum_son_item_demand)
+      }
+    }
+    supply_newWeek_supply_item <- as.numeric(supply_matrix[,2]) - order_per_son_item + as.numeric(supply_matrix[,3])
+    
+    
+    # the final order for thw parent items and the son items this week
+    order_all_parent_item <- Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`
+    order_all_son_item <- order_per_son_item
+  } else {
+    rhs <- c(order_newWeek_parent_item, supply_newWeek_supply_item)
+    obj <- c(rep(1, times = nrow(test)))
+    mat <- constraint_matrix
+    dir <- c(rep("<=" ,times = nrow(constraint_matrix)))
+    max <- T
+    order <- Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`
+    parent_name <- as.character(bom$`Parent Item`[bom$`Son Item` == bom_matrix[1,2]])
+    
+    order <- cbind(parent_name, order)
+    order <- as.data.frame(order)
+    names(order) <- c("Parent Item","Demand")
+    order_byWeek <- merge(order, bom, by.x = 'Parent Item')
+    order_son_item <- as.numeric(as.vector(order_byWeek$Demand))*as.numeric(as.vector((order_byWeek$Ratio)))
+    order_byWeek <- cbind(order_byWeek, order_son_item)
+    
+    # the rest demand of complete machines:
+    order_rest_parent_item <- as.numeric(test_matrix[,k+1]) - Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`
+    if (k<12) {
+      order_newWeek_parent_item <- order_rest_parent_item + as.numeric(test_matrix[,k+2])
+    }
+    
+    
+    # the next supply source in the next week:
+    for (t in 1:nrow(supply_matrix)) {
+      son_item_demand <- order_byWeek$order_son_item[order_byWeek$`Son Item`==bom_matrix[t,2]]
+      sum_son_item_demand <- sum(son_item_demand)
+      if (t==1) {
+        order_per_son_item <- c(sum_son_item_demand)
+      } else {
+        order_per_son_item <- c(order_per_son_item, sum_son_item_demand)
+      }
+    }
+    if (k<12) {
+      supply_newWeek_supply_item <- as.numeric(supply_matrix[,k+1]) - order_per_son_item + as.numeric(supply_matrix[,k+2])
+    }
+    
+    
+    # the final order for thw parent items and son items this week
+    order_all_parent_item <- cbind(order_all_parent_item, Rsymphony_solve_LP(obj, mat, dir, rhs, max = max)$`solution`)
+    order_all_son_item <- cbind(order_all_son_item, order_per_son_item)
+  }
+}
+```
 Best Regards!                              
 Chuwei Zhou                
 2019.2.8                  
