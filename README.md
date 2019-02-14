@@ -17,7 +17,17 @@ max <- T
 Actually we should have used the Integer Programming in our model, with some simple revises changing the variables type within the library Rsymphony. But as the extension of the feasible region, we keep using linear programming here.               
                       
                       
-In order for the convenience to merge different data frames and assign different sub-set of a data frame, I just set that each data frame would have its own matrix form. And for uniformity, in the BOM (bill of materials) data set, the order of the parent items corresponding to a son item would be the same to that of the parent items in forecast demand, and the order of the son items corresponding to a parent item would be the same to that of the son items in supply data set.                                     
+In order for the convenience to merge different data frames and assign different sub-set of a data frame, I just set that each data frame would have its own matrix form. And for uniformity, in the BOM (bill of materials) data set, the order of the parent items corresponding to a son item would be the same to that of the parent items in forecast demand, and the order of the son items corresponding to a parent item would be the same to that of the son items in supply data set.           
+               
+## Read the Data and Data Processing               
+```r
+library(readxl)
+test <- read_excel('test.xlsx', sheet = "demand_forecast")
+```                
+The form of the demand data can be simplified as:                   
+
+                
+                
 ## Constraint Matrix          
 
 No.0 constraint: the number of each complete machine would not exceed the forecast demand;      
