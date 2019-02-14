@@ -32,7 +32,13 @@ bom <- read_excel('test.xlsx', sheet = "BOM")
 bom_matrix <- as.matrix(bom) # the matrix form of the bill of materials
 ```
 The form of the bill of materials (BOM) can be simplified as:              
-![LP_BOM](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_BOM%E5%9B%BE%E7%89%871.png)                 
+![LP_BOM](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_BOM%E5%9B%BE%E7%89%871.png)                  
+                    
+```r
+supply <- read_excel('test.xlsx', sheet = "supply")
+supply[is.na(supply)] <- 0
+supply_matrix <- as.matrix(supply) # the matrix form of the supply data set
+```
                 
                 
 ## Constraint Matrix          
@@ -47,10 +53,6 @@ for (i in 1:nrow(test)) {
 ```
 No.1 constraint: the maximum supply of each son item;
 ```r
-supply <- read_excel('test.xlsx', sheet = "supply")
-supply[is.na(supply)] <- 0
-supply_matrix <- as.matrix(supply) # the matrix form of the supply data set
-
 constraint_matrix <- constraint_matrix_0
 for (j in 1:nrow(supply)) {
   vector_ratio <- bom$Ratio[bom$`Son Item`== bom_matrix[j,2]]
