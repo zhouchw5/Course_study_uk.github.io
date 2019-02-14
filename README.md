@@ -23,6 +23,7 @@ In order for the convenience to merge different data frames and assign different
 ```r
 library(readxl)
 test <- read_excel('test.xlsx', sheet = "demand_forecast")
+test_matrix <- as.matrix(test) # the matrix form of the demand data of the parent items
 ```                
 The form of the demand data can be simplified as:                     
 ![LP_demand](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_demand.png)              
