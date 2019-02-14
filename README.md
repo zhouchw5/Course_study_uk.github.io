@@ -26,7 +26,13 @@ test <- read_excel('test.xlsx', sheet = "demand_forecast")
 test_matrix <- as.matrix(test) # the matrix form of the demand data of the parent items
 ```                
 The form of the demand data can be simplified as:                     
-![LP_demand](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_demand.png)              
+![LP_demand](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_demand.png)                  
+```r
+bom <- read_excel('test.xlsx', sheet = "BOM")
+bom_matrix <- as.matrix(bom) # the matrix form of the bill of materials
+```
+The form of the bill of materials (BOM) can be simplified as:              
+![LP_BOM](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_BOM%E5%9B%BE%E7%89%871.png)                 
                 
                 
 ## Constraint Matrix          
@@ -41,8 +47,6 @@ for (i in 1:nrow(test)) {
 ```
 No.1 constraint: the maximum supply of each son item;
 ```r
-bom <- read_excel('test.xlsx', sheet = "BOM")
-bom_matrix <- as.matrix(bom) # the matrix form of the bill of materials
 supply <- read_excel('test.xlsx', sheet = "supply")
 supply[is.na(supply)] <- 0
 supply_matrix <- as.matrix(supply) # the matrix form of the supply data set
