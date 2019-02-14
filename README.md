@@ -24,8 +24,8 @@ In order for the convenience to merge different data frames and assign different
 library(readxl)
 test <- read_excel('test.xlsx', sheet = "demand_forecast")
 ```                
-The form of the demand data can be simplified as:                   
-
+The form of the demand data can be simplified as:                     
+![LP_demand](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_demand.png)              
                 
                 
 ## Constraint Matrix          
