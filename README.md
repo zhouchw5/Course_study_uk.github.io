@@ -39,6 +39,7 @@ supply <- read_excel('test.xlsx', sheet = "supply")
 supply[is.na(supply)] <- 0
 supply_matrix <- as.matrix(supply) # the matrix form of the supply data set
 ```
+The form of the son item's supply data can be simplified as:             
 ![LP_supply](https://github.com/zhouchw5/Course_study_uk.github.io/blob/master/LP_supply.png)                   
                 
 ## Constraint Matrix          
