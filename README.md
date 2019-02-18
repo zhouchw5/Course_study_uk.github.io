@@ -24,3 +24,7 @@ random_state=0, cluster_std=0.60)
 plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='spring')
 ```
 
+               
+Yours,                
+Chuwei Zhou                   
+2019.2.18              
