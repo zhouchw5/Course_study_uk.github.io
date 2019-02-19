@@ -17,7 +17,9 @@ from scipy import stats
 import seaborn as sns; sns.set()
 ```
                   
-Generate two clusters of data points:                 
+Generate two clusters of data points:              
+We utilize the make_blobs function to generate two clusters, where X is an array of two-dimensional vectors (data points) converging to different centers,        
+
 ```python
 # we can adjust the parameters like the standard deviation cluster_std to obtain different distribution of dots with different levels of randomness
 from sklearn.datasets.samples_generator import make_blobs
