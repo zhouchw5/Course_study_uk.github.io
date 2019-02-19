@@ -18,7 +18,7 @@ import seaborn as sns; sns.set()
 ```
                   
 Generate two clusters of data points:              
-We utilize the make_blobs function to generate two clusters, where X is an array of two-dimensional vectors (data points) converging to different centers,        
+We utilize the make_blobs function to generate two clusters, where X is an array of two-dimensional vectors (data points) converging to different centers, with the array y listing "0" or "1" notating the different clusters of data points. And len(X) == len(y).          
 
 ```python
 # we can adjust the parameters like the standard deviation cluster_std to obtain different distribution of dots with different levels of randomness
