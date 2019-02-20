@@ -37,7 +37,9 @@ for m, b in [(1, 0.65), (0.5, 1.6), (-0.2, 2.9)]:
     plt.plot(xfit, m * xfit + b, '-k')
 plt.xlim(-1, 3.5);
 ```
-                                 
+![discriminate](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/discriminative.png)        
+              
+              
                
 Yours,                
 Chuwei Zhou                   
