@@ -27,7 +27,7 @@ X, y = make_blobs(n_samples=50, centers=2,
 random_state=0, cluster_std=0.60)
 plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='spring')
 ```
-                                 
+![dataclusters](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/dataclusters.png)                                                           
                                  
                
 Yours,                
