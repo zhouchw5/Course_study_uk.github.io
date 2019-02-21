@@ -4,11 +4,14 @@
 - 'Local repository' constructed in Hadoop, upload/download files to/from the bucket                   
 - Coding performance in PySpark using jupyter                                        
                               
-## Buckets and clusters conctruction in Google Cloud Platform                         
+## Buckets and clusters construction in Google Cloud Platform                         
+```python
 
+```
 
 
 
 
 Yours,                  
-Chuwei Zhou                  
+Chuwei Zhou        
+2019.2.21                 
