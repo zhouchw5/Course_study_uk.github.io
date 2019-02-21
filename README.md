@@ -132,8 +132,31 @@ The .filter(...) method allows us to select elements of an RDD that satisfy spec
 data_filtered = data_from_file_conv.filter(lambda row: row[0] == 'Hans-Peter Seidel') 
 data_filtered.take(5)
 ```
+### (c).distinct()              
+This method returns a list of distinct values of transformed RDD elements.                
+```python
+distinct_author = data_from_file_conv.map(lambda row: row[0]).distinct()
+distinct_author.count()
+```
+### (d) .sample(...)             
+The .sample() method returns a random subset of an RDD.                 
+```python
+fraction = 0.1
+data_sample = data_from_file_conv.sample(False, fraction, 666)
+
+data_sample.take(1)
+```
+We need to confirm that we really got 10% of all the elements.            
+```python
+length_original = data_from_file_conv.count()
+length_sample = data_sample.count()
+print('Original dataset: ', length_original) 
+print('Sample', length_sample)
+print('Ratio', length_sample/length_original)
+```
 
 
+                  
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
