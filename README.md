@@ -79,6 +79,7 @@ data_from_file = sc.\
     textFile(
         "gs://chuwei/author-large.txt", 
         4)
+data_from_file.take(5)
 ```
 
 
