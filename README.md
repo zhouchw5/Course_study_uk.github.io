@@ -38,7 +38,20 @@ for m, b in [(1, 0.65), (0.5, 1.6), (-0.2, 2.9)]:
 plt.xlim(-1, 3.5);
 ```
 ![discriminate](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/discriminative.png)        
-These are three different separators that, nevertheless, perfectly discriminate between these samples. And we can see that depending on which we choose, a new data point marked as "X" in the figure could be assigned a different label. That's why we need an optimal solution for the division avoiding the uncertainty of predication for a data point.               
+These are three different separators that, nevertheless, perfectly discriminate between these samples. And we can see that depending on which we choose, a new data point marked as "X" in the figure could be assigned a different label. That's why we need an optimal solution for the division avoiding the uncertainty of predication for a data point.             
+                     
+To add a margin for each line, in which the line is the midline.              
+```python
+xfit = np.linspace(-1, 3.5)
+plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='spring')
+
+for m, b, d in [(1, 0.65, 0.33), (0.5, 1.6, 0.55), (-0.2, 2.9, 0.2)]:
+    yfit = m * xfit + b
+    plt.plot(xfit, yfit, '-k')
+    plt.fill_between(xfit, yfit - d, yfit + d, edgecolor='none', color='#AAAAAA',
+                     alpha=0.4)
+plt.xlim(-1, 3.5)
+```
 
               
                
