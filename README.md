@@ -110,8 +110,24 @@ import numpy as np
 data_from_file_conv = data_from_file.map(lambda row: np.array(row.strip().split("\t")))
 data_from_file_conv.take(5)
 ```
+We can filter and transform only one part of an RDD element (firstly you should figure out what a RDD element looks like):            
+```python
+publish_year = data_from_file_conv.map(lambda row: int(row[3]))
+publish_year.take(10)
+```
+or we can combine multiple part of an RDD element:            
+```python
+author_book = data_from_file_conv.map(lambda row: (row[0], row[2]))
+author_book.take(5)
+```
+### .flatMap(...)
+The .flatMap(...) method works similarly to .map(...) but returns a flattened result instead of a list.
+```python
+publish_year_2_flat = data_from_file_conv.flatMap(lambda row: (row[0], row[2]))
+publish_year_2_flat.take(10)
+```
 
-                  
+
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
