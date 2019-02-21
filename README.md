@@ -57,6 +57,11 @@ To check the content of dblp directory in my local file system:
 ```python
 ls -al dblp
 ```
+To get the selected file from Hadoop to our bucket in the Google Cloud Platform:                   
+```python
+gsutil cp author-large.txt gs://chuwei/
+```
+
 
 Yours,                  
 Chuwei Zhou        
