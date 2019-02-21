@@ -63,7 +63,13 @@ To get the selected file from Hadoop to our bucket in the Google Cloud Platform:
 ```python
 gsutil cp author-large.txt gs://chuwei/
 ```
+                          
+## Creating RDDs               
 
+```python
+data = sc.parallelize([('a', 1), ('b', 4), ('c',10)])
+data.collect()
+```
 
 Yours,                  
 Chuwei Zhou        
