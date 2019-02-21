@@ -31,7 +31,9 @@ To configure our browser using the cmd operations:
 cd C:\Program Files (x86)\Google\Chrome\Application
 chrome.exe --proxy-server="socks5://localhost:1080" --user-data-dir="%Temp%\chuweizhou-m" http://chuweizhou-m:8088
 ```
-![hadoop](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/hadoop.png)                  
+![hadoop](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/hadoop.png)             
+The port for the jupyter:              
+>http://chuweizhou-m:8123                      
 ![jupyter](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/google%20jupyter.png)               
            
 ## 'Local repository' constructed in Hadoop, upload/download files to/from the bucket                  
