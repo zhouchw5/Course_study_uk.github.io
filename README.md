@@ -19,8 +19,13 @@ gcloud dataproc clusters create chuweizhou --bucket chuwei --subnet default --zo
 ![VM SSH](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/VM%20SSH.png)
 ## VM SSH connection and browser configuration                   
 Actually we have finished the VM SSH connection when creating the cluster above, next we should configure our browser so that we can get access to different ports based on our browser, like http://chuweizhou-m:8123 for jupyter.                
-
-
+```python
+gcloud compute ssh chuweizhou-m --project=curious-ocean-228920 --zone=europe-west3-a -- -D 1080 -N
+```
+Other options like (but the zone should be consistent with that you use for cluster creation)                   
+```python     
+gcloud compute ssh chuweizhou-m --project=curious-ocean-228920 --zone= us-east1-b -- -D 1080 -N
+```
 
 Yours,                  
 Chuwei Zhou        
