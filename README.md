@@ -16,7 +16,8 @@ Sometimes if the zone we have selected has no enough space, we can switch to us-
 ```python
 gcloud dataproc clusters create chuweizhou --bucket chuwei --subnet default --zone europe-west3-b --master-machine-type n1-standard-4 --master-boot-disk-size 500 --num-workers 2 --worker-machine-type n1-standard-4 --worker-boot-disk-size 500 --image-version 1.3-deb9 --project curious-ocean-228920 --initialization-actions gs://dataproc-initialization-actions/jupyter/jupyter.sh
 ``` 
-# VM SSH connection and browser configuration                   
+## VM SSH connection and browser configuration                   
+Actually we have finished the VM SSH connection when creating the cluster above, next we should configure our browser so that we can get access to different ports based on our browser, like http://chuweizhou-m:8123 for jupyter.                
 
 
 
