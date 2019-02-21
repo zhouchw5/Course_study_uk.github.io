@@ -25,7 +25,13 @@ gcloud compute ssh chuweizhou-m --project=curious-ocean-228920 --zone=europe-wes
 Other options like (but the zone should be consistent with that you use for cluster creation)                   
 ```python     
 gcloud compute ssh chuweizhou-m --project=curious-ocean-228920 --zone=us-east1-b -- -D 1080 -N
+```             
+To configure our browser using the cmd operations:                     
+```python
+cd C:\Program Files (x86)\Google\Chrome\Application
+chrome.exe --proxy-server="socks5://localhost:1080" --user-data-dir="%Temp%\chuweizhou-m" http://chuweizhou-m:8088
 ```
+![hadoop](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/hadoop.png)               
 
 Yours,                  
 Chuwei Zhou        
