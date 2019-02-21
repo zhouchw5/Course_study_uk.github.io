@@ -90,11 +90,26 @@ data_heterogenous[1]['Porsche']
 ```
 
 ## Transformations                 
-
+### (a) .map(...)                
+.map applies (...) to each element of the RDD. Here we transform each row of the **data_from_file** from a string to a list of strings.        
 ```python
+def extractInformation(row):
+    import re
+    import numpy as np
+    
+    row = row.strip() # remove leading and trailing whitespaces
+    words = np.array(row.split("\t")) # split the line into words by tab
+    return words
 
+data_from_file_conv = data_from_file.map(extractInformation)
+data_from_file_conv.map(lambda row: row).take(5)
 ```
-
+Or we can use a lambda expression to split and transform our dataset. We can get the same result given by the coding above.            
+```python
+import numpy as np
+data_from_file_conv = data_from_file.map(lambda row: np.array(row.strip().split("\t")))
+data_from_file_conv.take(5)
+```
 
                   
 Yours,                  
