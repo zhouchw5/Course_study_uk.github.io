@@ -32,7 +32,11 @@ cd C:\Program Files (x86)\Google\Chrome\Application
 chrome.exe --proxy-server="socks5://localhost:1080" --user-data-dir="%Temp%\chuweizhou-m" http://chuweizhou-m:8088
 ```
 ![hadoop](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/hadoop.png)                  
-![jupyter](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/google%20jupyter.png)
+![jupyter](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/google%20jupyter.png)               
+           
+## 'Local repository' constructed in Hadoop, upload/download files to/from the bucket                  
+This part we should utilize the VM SSH terminal.                                
+![SSH Terminal](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/VM%20SSH%20Terminal.png)
 
 Yours,                  
 Chuwei Zhou        
