@@ -80,7 +80,9 @@ data_from_file = sc.\
         "gs://chuwei/author-large.txt", 
         4)
 data_from_file.take(5)
-```
+```                 
+![RDD construction](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/RDD%20construction.png)                  
+                  
 
 
                   
