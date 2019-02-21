@@ -81,7 +81,13 @@ data_from_file = sc.\
         4)
 data_from_file.take(5)
 ```                 
-![RDD construction](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/RDD%20construction.png)                  
+![RDD construction](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/RDD%20construction.png)                                  
+RDD is a scheme-less data structure. We can access the object that stored in an RDD element as we would normally do in Python.            
+```python
+data_heterogenous = sc.parallelize([('Ferrari', 'fast'), {'Porsche': 100000}, ['Spain','visited', 4504]]).collect()
+data_heterogenous
+data_heterogenous[1]['Porsche']
+```
                   
 
 
