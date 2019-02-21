@@ -36,7 +36,18 @@ chrome.exe --proxy-server="socks5://localhost:1080" --user-data-dir="%Temp%\chuw
            
 ## 'Local repository' constructed in Hadoop, upload/download files to/from the bucket                  
 This part we should utilize the VM SSH terminal.                                
-![SSH Terminal](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/VM%20SSH%20Terminal.png)
+![SSH Terminal](https://github.com/zhouchw5/Course_study_uk.github.io/blob/First-Dance-with-PySpark/VM%20SSH%20Terminal.png)                                        
+                     
+For example, we need to create a directory dblp in Hadoop and download two files dblp.xml.gz and author-large.txt, both of which would be got attaced to the bucket.                                       
+```python
+mkdir dblp
+cd dblp
+wget http://dblp.uni-trier.de/xml/dblp.xml.gz
+wget http://webdam.inria.fr/Jorge/files/author-large.txt
+gunzip -k dblp.xml.gz
+cd ..
+hadoop fs -put dblp/ /dblp
+```
 
 Yours,                  
 Chuwei Zhou        
