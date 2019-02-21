@@ -45,7 +45,8 @@ cd dblp
 wget http://dblp.uni-trier.de/xml/dblp.xml.gz
 wget http://webdam.inria.fr/Jorge/files/author-large.txt
 gunzip -k dblp.xml.gz
-cd ..
+cd ..          
+# Copy the dblp directory from your local file system to HDFS: 
 hadoop fs -put dblp/ /dblp
 ```
 
