@@ -126,6 +126,12 @@ The .flatMap(...) method works similarly to .map(...) but returns a flattened re
 publish_year_2_flat = data_from_file_conv.flatMap(lambda row: (row[0], row[2]))
 publish_year_2_flat.take(10)
 ```
+### (b).filter(...)              
+The .filter(...) method allows us to select elements of an RDD that satisfy specific criteria. Here we filter all the elements with author name 'Hans-Peter Seidel'.            
+```python
+data_filtered = data_from_file_conv.filter(lambda row: row[0] == 'Hans-Peter Seidel') 
+data_filtered.take(5)
+```
 
 
 Yours,                  
