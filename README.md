@@ -88,7 +88,12 @@ data_heterogenous = sc.parallelize([('Ferrari', 'fast'), {'Porsche': 100000}, ['
 data_heterogenous
 data_heterogenous[1]['Porsche']
 ```
-                  
+
+## Transformations                 
+
+```python
+
+```
 
 
                   
