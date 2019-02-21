@@ -65,12 +65,15 @@ gsutil cp author-large.txt gs://chuwei/
 ```
                           
 ## Creating RDDs               
-
+There are two ways to create an RDD in PySpark, one is to parallelize a list,                  
 ```python
 data = sc.parallelize([('a', 1), ('b', 4), ('c',10)])
 data.collect()
 ```
+the other is to read from a data source (a file or database)               
 
+
+                  
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
