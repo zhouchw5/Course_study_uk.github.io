@@ -61,6 +61,8 @@ ls -al dblp
 ```
 To get the selected file from Hadoop to our bucket in the Google Cloud Platform:                   
 ```python
+# in the VM SSH Terminal
+cd dblp
 gsutil cp author-large.txt gs://chuwei/
 ```
                           
