@@ -49,6 +49,14 @@ cd ..
 # Copy the dblp directory from your local file system to HDFS: 
 hadoop fs -put dblp/ /dblp
 ```
+To list files:                 
+```python
+hadoop fs -ls /
+```
+To check the content of dblp directory in my local file system:             
+```python
+ls -al dblp
+```
 
 Yours,                  
 Chuwei Zhou        
