@@ -52,7 +52,7 @@ for m, b, d in [(1, 0.65, 0.33), (0.5, 1.6, 0.55), (-0.2, 2.9, 0.2)]:
                      alpha=0.4)
 plt.xlim(-1, 3.5)
 ```
-
+![line with margin](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/line%20with%20margin.png)
               
                
 Yours,                
