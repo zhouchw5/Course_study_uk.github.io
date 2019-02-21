@@ -70,7 +70,14 @@ There are two ways to create an RDD in PySpark, one is to parallelize a list,
 data = sc.parallelize([('a', 1), ('b', 4), ('c',10)])
 data.collect()
 ```
-the other is to read from a data source (a file or database)               
+the other is to read from a data source (a file or database)                    
+```python
+# edit location
+data_from_file = sc.\
+    textFile(
+        "gs://chuwei/author-large.txt", 
+        4)
+```
 
 
                   
