@@ -53,7 +53,9 @@ for m, b, d in [(1, 0.65, 0.33), (0.5, 1.6, 0.55), (-0.2, 2.9, 0.2)]:
 plt.xlim(-1, 3.5)
 ```
 ![line with margin](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/line%20with%20margin.png)
-              
+As we have mentioned at the very beginning, the division line with the widest margin is what we should choose for data classification. Support vector machines are an example of such a maximum margin estimator.                  
+                    
+                    
                
 Yours,                
 Chuwei Zhou                   
