@@ -194,7 +194,7 @@ If we want to get a pseudo random subset of elements, we can use .takeSample(...
 data_take_sampleddata_tak  = rdd1.takeSample(False, 1, 667)
 data_take_sampled
 ```                      
-### (b)   .reduce(...)             
+### (b) .reduce(...)             
 The method .reduce(...) reduces the elements of an RDD using a specified function           
 ```python
 data_reduce_1 = sc.parallelize([1, 2, .5, .3, 5, .2], 1)
@@ -207,8 +207,23 @@ print(data_reduce_2.reduce(lambda x, y: x + y))
 ```
 If the reduce function is not associative and commutative, you may get a wrong result depending on how your data is partitioned.        
 For example, if we were to reduce the data by dividing the current result with the input element, we should obtain 3.33... as the result.                   
-
-
+```python
+print((data_reduce_1.reduce(lambda x, y: x / y))
+```
+However, if the dataset is partitioned into 3 partitions, the result will be incorrect. Why?             
+```python
+print(data_reduce_1.reduce(lambda x, y: x / y))
+```                  
+### .reduceByKey(...)              
+The .reduceByKey(...) method works in a similar way to the .reduce(...) method but performs a reduction per distinct key.        
+```python
+rdd2.reduceByKey(lambda x, y: x + y).collect()
+```
+### (c) .count()               
+The .count() method counts the number of elements in the RDD.                 
+```python
+rdd2.count()
+```                  
 
 Yours,                  
 Chuwei Zhou        
