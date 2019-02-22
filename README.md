@@ -172,7 +172,30 @@ This intersection method would return elements that are in both RDDs.
 rdd1.intersection(rdd2).collect()
 ```
                   
-                  
+### (f) .repartition(...)               
+Repartitioning a dataset changes the number of partitions the dataset is divided into.            
+```python
+print('before repartition:', len(rdd1.glom().collect()))
+rdd1 = rdd1.repartition(2)
+
+print('after repartition:', len(rdd1.glom().collect()))
+```
+                   
+## Actions               
+### (a) .take(...)                
+The method returns specified number of top elements from a single dataset partition.          
+```python
+data_first = rdd1.take(1)
+data_first
+```
+### .takeSample(...)              
+If we want to get a pseudo random subset of elements, we can use .takeSample(...) instead.                   
+```python
+data_take_sampleddata_tak  = rdd1.takeSample(False, 1, 667)
+data_take_sampled
+```                      
+                                   
+                                   
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
