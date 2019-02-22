@@ -233,7 +233,62 @@ If your dataset is in the form of key-value you can use the .countByKey() method
 rdd2.countByKey().items()
 ```
 ### (d) .saveAsTextFile(...)               
+As the name suggests, the .saveAsTextFile() saves the RDD to text files: each partition to a separate file.               
+```python
+#rdd2.saveAsTextFile('file:///Users/Christine/Documents/rdd2')
+my_filename = 'gs://chuwei/rdd3'
+rdd2.saveAsTextFile(my_filename)
+```
+To read the file, you need to parse as all elements are interpreted as strings.                
+```python
+def parseInput(row):
+    import re
+    
+    pattern = re.compile(r'\(\'([a-z])\', ([0-9]+)\)')
+    row_split = pattern.split(row)
+    return (row_split[1], int(row_split[2]))
+    
+data_key_reread = sc \
+    .textFile(my_filename) \
+    .map(parseInput)
+    #     .textFile('file:///Users/Christine/Documents/rdd2') \
+data_key_reread.collect()
+```
+### (e) .foreach(...)            
+The method .foreach(...) applies the same function to each element of the RDD in an iterative way. The difference from map is it returns nothing.              
+```python
+def f(x): 
+    print(x)
 
+data_reduce_1.foreach(f) # you won't see the output here as `print(...)` is applied to each RDD element
+```
+## Let's see how partitions change the speed                  
+```python
+bigrdd  = sc.parallelize(range(1000000))
+```
+```python
+import time
+from numpy import sqrt, array, sin
+times = []
+
+for npart in range(25,0,-1):
+    bigrdd = bigrdd.repartition(npart)
+    print("Number of partitions: {}".format(bigrdd.getNumPartitions()))
+    t0 = time.time()
+    a0 = bigrdd.map(lambda x: sin(sqrt(sin(sqrt(x**2+.5))))).reduce(lambda x, y: x + y);#bigrdd.collect()
+    dt = time.time() - t0;
+    print("time: ",dt)
+    times = times + [dt]
+```
+```python
+times  ==  arrayarray((times))
+from  matplotlib  import pyplot as plt
+plt.plot(range(25,0,-1),times,'ko')
+plt.xlabel("number of partions")
+plt.ylabel("time")
+plt.ylim([0,8.5])
+plt.show()
+```
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
