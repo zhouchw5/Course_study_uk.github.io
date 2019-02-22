@@ -55,7 +55,7 @@ plt.xlim(-1, 3.5)
 ![line with margin](https://github.com/zhouchw5/Course_study_uk.github.io/blob/support-vector-machine/line%20with%20margin.png)
 As we have mentioned at the very beginning, the division line with the widest margin is what we should choose for data classification. Support vector machines are an example of such a maximum margin estimator.                  
                     
-                    
+we can use the Scikit-Learn's support vector classfier to train an SVM model on our data, by selecting one of different kernels corresponding to different types of classfiers.            
                
 Yours,                
 Chuwei Zhou                   
