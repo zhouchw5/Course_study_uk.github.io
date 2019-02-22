@@ -223,7 +223,16 @@ rdd2.reduceByKey(lambda x, y: x + y).collect()
 The .count() method counts the number of elements in the RDD.                 
 ```python
 rdd2.count()
-```                  
+```            
+It has the same effect as the method below but does not require shifting the data to the driver node.               
+```python
+len(rdd2.collect()) # DON'T DO THIS - it is expensive!
+```
+If your dataset is in the form of key-value you can use the .countByKey() method to get the counts for distinct keys.              
+```python
+rdd2.countByKey().items()
+```
+### (d) .saveAsTextFile(...)               
 
 Yours,                  
 Chuwei Zhou        
