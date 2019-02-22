@@ -157,8 +157,21 @@ print('Ratio', length_sample/length_original)
 ```
 ### (e) Join        
 Here we demonstrate the join operation for two pairs of RDDs:           
-
-
+```python
+rdd1 = sc.parallelize([('a', 1), ('b', 4), ('c',10)])
+rdd2 = sc.parallelize([('a', 1), ('b', 6), ('d', 15),('d', 3),('e', 2),('a', 8),('d', 2),('e', 1),('f', 3)])
+```
+#### (e.1) .leftOuterJoin(...)             
+Left outer join, just like what we do in SQL, joins two pair RDDs (left and right) based on their keys. For each key of the left RDD, it returns the corresponding value of the left RDD and the value of the right RDD if there is a matching key (otherwise a null value).        
+```python
+rdd1.leftOuterJoin(rdd2).collect()
+```
+#### (e.2) .intersection(...)
+This intersection method would return elements that are in both RDDs.             
+```python
+rdd1.intersection(rdd2).collect()
+```
+                  
                   
 Yours,                  
 Chuwei Zhou        
