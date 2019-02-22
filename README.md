@@ -194,8 +194,18 @@ If we want to get a pseudo random subset of elements, we can use .takeSample(...
 data_take_sampleddata_tak  = rdd1.takeSample(False, 1, 667)
 data_take_sampled
 ```                      
-                                   
-                                   
+### (b)   .reduce(...)             
+The method .reduce(...) reduces the elements of an RDD using a specified function           
+```python
+data_reduce_1 = sc.parallelize([1, 2, .5, .3, 5, .2], 1)
+print(data_reduce_1.reduce(lambda x, y: x + y))
+```
+Even if we partition the dataset in a different way, we still get the same result because the given reduce function is associative and commutative.                
+```python
+data_reduce_2 = sc.parallelize([1, 2, .5, .3, 5, .2], 3)
+print(data_reduce_2.reduce(lambda x, y: x + y))
+```
+                   
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
