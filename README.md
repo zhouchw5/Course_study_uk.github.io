@@ -2,7 +2,8 @@
 - Buckets and clusters conctruction in Google Cloud Platform                       
 - VM SSH connection and browser configuration                    
 - 'Local repository' constructed in Hadoop, upload/download files to/from the bucket                   
-- Coding performance in PySpark using jupyter                                        
+- Coding performance in PySpark using jupyter                
+- Creation and performance on various transformations of resilient distributed datasets (RDD) in PySpark           
                               
 ## Buckets and clusters construction in Google Cloud Platform                    
 This part can be finished in PowerShell (Windows System) or Google Cloud SDK Shell.                  
@@ -154,6 +155,8 @@ print('Original dataset: ', length_original)
 print('Sample', length_sample)
 print('Ratio', length_sample/length_original)
 ```
+### (e) Join        
+Here we demonstrate the join operation for two pairs of RDDs:           
 
 
                   
