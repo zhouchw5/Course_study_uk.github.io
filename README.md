@@ -205,7 +205,11 @@ Even if we partition the dataset in a different way, we still get the same resul
 data_reduce_2 = sc.parallelize([1, 2, .5, .3, 5, .2], 3)
 print(data_reduce_2.reduce(lambda x, y: x + y))
 ```
-                   
+If the reduce function is not associative and commutative, you may get a wrong result depending on how your data is partitioned.        
+For example, if we were to reduce the data by dividing the current result with the input element, we should obtain 3.33... as the result.                   
+
+
+
 Yours,                  
 Chuwei Zhou        
 2019.2.21                 
